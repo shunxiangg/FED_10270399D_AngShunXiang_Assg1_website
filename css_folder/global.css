@@ -1,0 +1,19 @@
+/* Global styles */
+body {
+    background: linear-gradient(to right, #f8b400, #fce38a);
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    background-color: #c1c1c1;
+    color: #222;
+    text-align: left;
+    padding: 20px;
+    border-top: 5px solid #4a4a4a;
+}
+
+footer p {
+    margin: 0;
+}

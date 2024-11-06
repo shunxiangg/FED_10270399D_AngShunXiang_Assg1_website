@@ -1,0 +1,16 @@
+/* Home Page Styles */
+.home-intro {
+    background-color: #e3f2fd;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page_title {
+    font-size: 2.5em;
+    color: #ff5722;
+    padding: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
