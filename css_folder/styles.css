@@ -1,0 +1,519 @@
+/* General styles */
+body {
+    background: linear-gradient(to right, #f8b400, #fce38a); /* Vintage yellow gradient */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for retro feel */
+    color: #333; /* Default text color */
+}
+
+
+header{
+    background-color: #4a4a4a; /* Darker gray for header */
+    color: #f9f9f9; /* Light text color */
+    padding: 5px 0; /* Increased padding for better spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    position: relative; /* Fixed position to always show at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    z-index: 1000;
+    transition: transform 0.3s ease; /* Smooth transition for the navbar */
+}
+
+
+/* /////////////////////////////    interactive nav bar when hover  ///////////////////////////////////////////*/
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #f9f9f9; /* text color */
+    text-decoration: none;
+    font-size: 1.3em; /* navigation bar words */
+    padding: 10px; /* padding for navigation bar area */
+    transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
+    display: inline-block; /*          */
+    position: relative; /* Allows for absolute positioning of child elements */
+}
+
+/* Hover effect       THE (:) change colour when click -while- (.) is when the thing is active*/
+.nav-links li a.hover,
+.nav-links li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    transform: translateY(-6px); /* Move up slightly */
+    color: #fce38a; /* Hover color for links */
+}
+
+/* Ensure the rest of the layout is not affected */
+.nav-links li a.active,
+.nav-links li a:active {
+    text-decoration: underline; /* Underline on hover */
+    transform: translateY(0px); /* Reset position when clicked */
+    color: #fce38a; /* Hover color for links */
+    
+    
+}
+
+
+/* /////////////// -Navbar styles- ///////////////////*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4a4a4a; /* Darker gray for navbar */
+    color: white;
+
+}
+
+
+
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+/* 
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 0px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+} */
+
+
+
+/* /////////////////////////////    ///////////////////  ///////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+/* Section styles */
+section {
+    margin: 20px auto;
+    max-width: 3000px;
+    text-align: center;
+
+    padding: 20px; /* Added padding to sections for better spacing */
+   
+    border: 3px dashed #4a4a4a; /* Dashed border for a retro look ??? */
+}
+
+h2 {
+    color: #7c4d99; /* Deep purple for headings */
+    text-shadow: 
+        0 0 5px rgba(124, 77, 153, 0.5), /* Soft glow */
+        0 0 10px rgba(124, 77, 153, 0.7), /* Stronger glow */
+        0 0 15px rgba(124, 77, 153, 1); /* Brightest glow */
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333; /* Dark text for readability */
+}
+
+/* Footer styles */
+footer {
+    background-color: #c1c1c1; /* Light gray footer */
+    color: #222; /* Darker text color */
+    text-align: left;
+    padding: 20px; /* Added padding for better spacing */
+    border-top: 5px solid #4a4a4a; /* Top border for separation */
+}
+
+footer p {
+    margin: 0; /* Reset margin for consistent spacing */
+}
+
+/* Home Page Styles (index.html) */
+.home-intro {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 50px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+/* .home-intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #8e24aa; 
+} */
+
+/* .home-intro p {
+    font-size: 1.2em;
+} */
+
+
+/* Card styles
+.card {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 20px auto; 
+    background-color: #ffe082; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+} */
+
+
+
+
+.page_title{
+    font-size: 2.5em;
+    color: #ff5722; /* Bright orange for headings */
+    padding: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Added shadow for emphasis */
+
+}
+
+section p, section ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+section ul {
+    list-style-type:decimal-leading-zero; /* Circular bullets for lists   -     NEED TO CHANGE */
+    margin-left: 20px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 5px solid #4a4a4a; /* Border for images */
+}
+
+/* Contact Page Styles (contact.html) and for some other pages  */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f0f0f0; /* Light gray form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4a4a4a; /* Darker label color */
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #4a4a4a; /* Dark border for input fields */
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+    /* form button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #6a1b9a; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1em;
+        transition: background-color 0.3s; 
+    }
+
+    form button:hover {
+        background-color: #8e24aa; 
+    } */
+
+    #thankYouMessage {
+        margin-top: 20px;
+        font-size: 1.2em;
+        color: rgb(9, 185, 9);
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+/* Flex Container styles */
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Spaces items evenly */
+    align-items: center; /* Centers the items vertically */
+    background-color: #f8b400; /* Background for visibility */
+    padding: 10px; /* Added padding for visibility */
+}
+
+.flex-item {
+    background-color: #ff5722; /* back ground colour for items */
+    padding: 15px; /*  padding for spacing */
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    flex: 1; /* Each item will take up equal space */
+    margin: 5px; /* margin for  spacing */
+}
+
+/* Responsive Navbar Styles */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* when the screen width is lower than 768px it will  not show the navigation links to diff pages but instead it will show the hanbugure menu*/
+        flex-direction: column;
+        position: fixed;
+        top: 109px;
+        right: 0;
+        background-color: #4a4a4ace; /* Darker background for dropdown */
+        width: 100%;
+        text-align: center;
+        
+        transition: 0.3s;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: flex; /* Show hamburger icon */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show navi links when active */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Store Page Styles */
+/* Container for each item */
+.store-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    
+}
+
+/* Box around Each item in the store */
+.store-items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* seperate the text content and buy button apart */
+    background-color: #e039b74f;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center; /* dont need, can dellllll need*/
+    cursor: pointer;
+}
+
+
+
+
+/* //////////////////////////////////// */
+
+/* Make product images the same size */
+.store-items .item img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; /* image retains its aspect ratio */
+    border-radius: 5px;
+    
+
+    display: block; /* Makes the image behave as a block element */
+    margin: 0 auto; /* centers the image */
+}
+
+/* Retro Items Modal style */
+.modal {
+    display: none; /* not shown at first */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.modal-content p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} */
+
+/* //////////////////////////////////// */
+
+/* ------button hover for buying items ------------ ******  */
+
+/* Buy Now button */
+
+
+
+/* 3D Pop-up Button */
+form button,
+.button-container {
+    margin: 20px auto;
+   
+    padding: 12px 25px;
+    background-color: #d2691e; /* buy now buttion colour */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace; /* Retro font ?? i guess */
+    
+    /* 3D effect */
+    box-shadow: 0 6px #8b4513; /* Shadow for 3D effect with darker shade */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; /* when refresh page the button will go into position */
+
+
+
+
+        /* Set fixed width and height */
+        width: 150px; /* Fixed width */
+        height: 50px; /* Fixed height */
+       
+        
+}
+
+/* Button hover effect */
+form button:hover,
+.button-container:hover {
+    background-color: #ff6347; /* Tomato color on hover */
+    transform: translateY(-4px); /* Moves the button up slightly to pop */
+    box-shadow: 0 10px #8b4513; /* Deeper shadow on hover */
+    font-family: 'Dancing Script', cursive; /* Retro font */
+}
+
+/* Button active effect (when clicked) */
+form button:active,
+.button-container:active {
+    transform: translateY(2px); /* Moves the button down */
+    box-shadow: 0 4px #8b4513; /* Shallower shadow for a pressed effect */
+}
+
+
+
+
+
+
+
+/*store page pop up*/
+
+/* Modal Title */
+#modalTitle {
+    font-family: 'Playfair Display', serif; /* Vintage font */
+    font-size: 24px;
+    color: #7c4d99; /* Vintage purple */
+    text-align: center;
+}
+
+/* Short Description */
+#modalShortDescription {
+    color: #7c4d99; 
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Long Description */
+#modalLongDescription {
+    font-family: 'Roboto', sans-serif; /* Clean sans-serif */
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+
+
