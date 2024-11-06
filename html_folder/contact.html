@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Contact Us</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Band Name</a>
+            </div>
+    
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shows.html">Upcoming Shows</a></li>
+                <li><a href="music.html">Music & Videos</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+    
+            <!-- Hamburger menu icon -->
+            <div class="menu-icon" id="menuIcon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section id="contact">
+        <h1 class="page_title">Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    
+        <!-- Thank You Message -->
+        <div id="thankYouMessage" style="display: none;">       <!-- styles display none so web no show-->
+            <h3>Thank you for contacting us!</h3>
+            <p>We will get back to you shortly.</p>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
+        <p>Follow us on <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a>, and <a href="https://twitter.com">Twitter</a></p>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
