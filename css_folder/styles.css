@@ -331,7 +331,16 @@ form textarea {
         display: flex; /* Show navi links when active */
     }
 }
-
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8em; 
+    }
+    
+    h2 {
+        font-size: 1.4em; 
+    }
+   
+}
 
 
 
@@ -348,6 +357,7 @@ form textarea {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px; /* Space between items */
+    
     
 }
 
@@ -370,7 +380,7 @@ form textarea {
 /* //////////////////////////////////// */
 
 /* Make product images the same size */
-.store-items .item img {
+.item img {
     width: 200px; 
     height: 200px; 
     object-fit: cover; /* image retains its aspect ratio */
