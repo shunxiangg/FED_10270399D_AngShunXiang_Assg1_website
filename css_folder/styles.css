@@ -1,6 +1,8 @@
 /* General styles */
 body {
-    background: linear-gradient(to right, #f8b400, #fce38a); /* Vintage yellow gradient */
+    background: linear-gradient(to right, #f8b400, #fce38a); /*Vintage yellow gradient*/
+    
+    
     font-family: 'Courier New', Courier, monospace; /* Monospace font for retro feel */
     color: #333; /* Default text color */
 }
@@ -69,10 +71,18 @@ header nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    
     background-color: #4a4a4a; /* Darker gray for navbar */
     color: white;
-
+    background-color: #765c48;
+    padding: 15px 30px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar a:hover {
+    background-color: #d98550;
+    color: #4a3f35;
+    border-radius: 8px;
 }
 
 
@@ -196,6 +206,7 @@ section p, section ul {
 section ul {
     list-style-type:decimal-leading-zero; /* Circular bullets for lists   -     NEED TO CHANGE */
     margin-left: 20px;
+    
 }
 
 section img {
@@ -272,6 +283,7 @@ form textarea {
 
 /* Flex Container styles */
 .flex-container {
+    
     display: flex;
     justify-content: space-around; /* Spaces items evenly */
     align-items: center; /* Centers the items vertically */
@@ -354,6 +366,7 @@ form textarea {
 /* Store Page Styles */
 /* Container for each item */
 .store-items {
+    
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px; /* Space between items */
@@ -363,15 +376,18 @@ form textarea {
 
 /* Box around Each item in the store */
 .store-items .item {
+    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* seperate the text content and buy button apart */
     background-color: #e039b74f;
-    padding: 20px;
+    padding: 10%;
     border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center; /* dont need, can dellllll need*/
     cursor: pointer;
+    padding-top: 15%;
 }
 
 
@@ -393,6 +409,7 @@ form textarea {
 
 /* Retro Items Modal style */
 .modal {
+    
     display: none; /* not shown at first */
     position: fixed;
     z-index: 100;
@@ -527,3 +544,134 @@ form button:active,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shows-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(132, 134, 119, 0.5)), url('https://img.freepik.com/premium-photo/symphony-instruments-vibrant-collage-musical-tools_435119-69168.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 55px;
+}
+
+/* Flex container for each show item */
+.show-item {
+    display: flex;
+    justify-content: space-between; /* This aligns the image and the content side by side */
+    margin-bottom: 100px;
+    padding: 55px;
+    background-color: rgba(255, 255, 255, 0.89); /* Light background for better text readability */
+    border-radius: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 75px;
+    
+}
+
+
+.show-item:nth-child(even) {
+    flex-direction: row-reverse; /* For even items, the text and image will switch places */
+}
+
+.show-item:nth-child(odd) {
+    flex-direction: row; /* For odd items, the default order is maintained */
+}
+
+/* Styling for the image */
+.show-image {
+    display: flex;
+    width: 40%; /* Adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Styling for the show details */
+.show-details {
+    width: 50%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+/* Show title styling */
+.show-title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Show description styling */
+.show-description {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* Buy ticket button styling */
+.buy-ticket {
+    margin: 20px auto;
+   
+    padding: 12px 25px;
+    background-color: #d2691e; /* buy now buttion colour */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace; /* Retro font ?? i guess */
+    
+    /* 3D effect */
+    box-shadow: 0 6px #8b4513; /* Shadow for 3D effect with darker shade */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; /* when refresh page the button will go into position */
+    /* Set fixed width and height */
+  
+    height: 50px; /* Fixed height */
+   
+}
+
+.buy-ticket:hover {
+    background-color: #ff6347; /* Tomato color on hover */
+    transform: translateY(-4px); /* Moves the button up slightly to pop */
+    box-shadow: 0 10px #8b4513; /* Deeper shadow on hover */
+    font-family: 'Dancing Script', cursive; /* Retro font */
+
+}
+
+
+
+
+
+
+
+
+
+/* Mobile view for responsiveness */
+@media (max-width: 768px) {
+    .show-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .show-image, .show-details {
+        width: 100%;
+    }
+
+    
+}
