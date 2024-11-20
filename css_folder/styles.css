@@ -399,14 +399,15 @@ form textarea {
 
 /* Make product images the same size */
 .item img {
-    width: 200px; 
-    height: 200px; 
+    width: 250px; 
+    height: 250px; 
     object-fit: cover; /* image retains its aspect ratio */
     border-radius: 5px;
     
 
     display: block; /* Makes the image behave as a block element */
     margin: 0 auto; /* centers the image */
+    
 }
 
 /* Retro Items Modal style */
@@ -747,4 +748,72 @@ form button:active,
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#about p {
+    font-size: 1.2em;
+    color: #333; /* Darker gray text for paragraph */
+    line-height: 1.6; /* Increase line spacing for readability */
+    max-width: 70%; /* Limit width for text */
+    margin: 0 auto 40px; /* Center the text with margin at the bottom */
+}
+
+.band-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 30px; 
+    margin-top: 55px; 
+}
+
+.member {
+    background-color: #ffeb3b; /* Yellow background for each member */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.member:hover {
+    transform: translateY(-5px); /* Hover effect to lift up the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    background-color: blue;
+}
+.member img {
+    width: 90%; /* Adjust the width to leave space on the sides */
+    height: 90%;
+    border-radius: 10px; /* Round the edges of images */
+    object-fit: cover; /* Ensure images fill the container without distortion */
+    max-height: 250px; /* Limit the height of the images */
+    margin: 0 auto; /* Horizontally center the image */
+    display: block; /* Ensure the image behaves like a block element */
+}
+
+
+.member h3 {
+    font-size: 1.8em;
+    color: #d2691e; /* A vintage brown color for the member's name */
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Retro font */
+}
+
+
+
+
+
+
+
+
+
+
 
