@@ -114,7 +114,9 @@ header nav ul li a {
 
 
 
-
+.dash{
+    border: 3px dashed #4a4a4a;
+}
 
 
 /* Section styles */
@@ -125,7 +127,7 @@ section {
 
     padding: 20px; /* Added padding to sections for better spacing */
    
-    border: 3px dashed #4a4a4a; /* Dashed border for a retro look ??? */
+     /* Dashed border for a retro look ??? */
 }
 
 h2 {
@@ -675,3 +677,74 @@ form button:active,
 
     
 }
+
+
+
+
+
+
+
+
+/* Filter for shows*/
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #e0dfd1;
+    border: 2px solid #7a7a7a; 
+    border-radius: 6px;
+    width: 70%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); 
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+/* Label Styling */
+.filter-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 15px;
+    color: #2c2c2c; 
+}
+
+/* Dropdown Styling */
+.filter-dropdown {
+    padding: 8px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace; 
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    background-color: #e0dfd1; 
+    color: #2c2c2c;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    width: 180px;
+    cursor: pointer;
+}
+
+.filter-dropdown:hover {
+    background-color: #d1d0c2; /* Slight color change on hover */
+}
+
+.filter-dropdown:focus {
+    border-color: #525252; /* Darker border to show focus */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4); /* Enhance inner shadow on focus */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .filter-label {
+        margin-bottom: 10px;
+    }
+
+    .filter-dropdown {
+        width: 100%;
+    }
+}
+

@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPCOMING SHOWS</title>
     
- 
-    
-    
     <link rel="stylesheet" href="css_folder/styles.css">
-
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -40,61 +37,149 @@
     </header>
 
 
+<!-- Filter Section -->
+<section id="filter-section" class="filter-container">
+    <label for="showFilter" class="filter-label">Filter Shows: </label>
+    <select id="showFilter" class="filter-dropdown" onchange="filterShows()">
+        <option value="all">All Shows</option>
+        <option value="upcoming">Upcoming Shows</option>
+        <option value="past">Past Shows</option>
+    </select>
+</section>
+
+
+
+
 
 
 
 
 
     <!-- Shows Section -->
-    <section id="shows">
+    <section id="upcoming-shows" class="dash">
         <h2 class="page_title">Upcoming Shows</h2>
         <ul>
-            <li>25th October 2024 - XYZ Music Festival</li>
-            <li>15th November 2024 - Rock at the Park</li>
-            <li>1st December 2024 - Wedding at Beachfront</li>
+            <li><a href="#show-1">October 2027 - How Soon is Now</a></li>
+            <li><a href="#show-2">15th November 2027 - Rock at the Park</a></li>
+            <li><a href="#show-3">1st December 2027 - Wedding at Beachfront</a></li>
         </ul>
-        <button class="cta-button">Book Us Now!</button>
-    </section>
+    
 
-
-
-
+    <!-- Upcoming Shows Section -->
     <section class="shows-section">
-        <div class="show-item">
+        <div class="show-item" id="show-1">
             <img src="imgs_folder/shows_how_soon_is_now_song.png" alt="Show Image" class="show-image">
             <div class="show-details">
-                <h2 class="show-title">Show Title</h2>
-                <p class="show-description">Experience the magic of live music with our highly talented singers and dynamic live band. Every performance is a harmonious journey that captivates hearts and elevates every moment.</p>
+                <h2 class="show-title">How Soon is Now</h2>
+                <p class="show-description">Join us for an unforgettable night of live music at the Ritz Manchester in October 2027, featuring talented singers and a dynamic band. Experience a harmonious journey that will captivate your heart and elevate every moment.</p>
                 <button class="buy-ticket">Buy Tickets</button>
             </div>
         </div>
-    
-        <div class="show-item">
+
+        <div class="show-item" id="show-2">
             <img src="imgs_folder/shows_the_smiths_song.png" alt="Show Image" class="show-image">
             <div class="show-details">
-                <h2 class="show-title">Show Title</h2>
-                <p class="show-description">Experience the magic of live music with our highly talented singers and dynamic live band. Every performance is a harmonious journey that captivates hearts and elevates every moment.</p>
+                <h2 class="show-title">Rock at the Park</h2>
+                <p class="show-description">Join us for "Rock in the Park" at the Brixton Ace in London on 15th November 2027. Enjoy an electrifying night of live music with talented singers and a dynamic band, as each performance takes you on a captivating journey that elevates every moment.</p>
+                <button class="buy-ticket">Buy Tickets</button>
+            </div>
+        </div>
+
+        <div class="show-item" id="show-3">
+            <img src="imgs_folder/show_wedding_at_beachfrong_young.png" alt="Show Image" class="show-image">
+            <div class="show-details">
+                <h2 class="show-title">Young at Beachfront</h2>
+                <p class="show-description">Join us for a magical evening of live music at a stunning beachfront wedding on 1st December 2027. Featuring talented singers and a dynamic band, every performance will captivate hearts and elevate the moment in this unforgettable celebration.</p>
                 <button class="buy-ticket">Buy Tickets</button>
             </div>
         </div>
     </section>
+</section>
+
+
+
+
+    <!-- Past Shows Section -->
+    <section id="past-shows" class="dash">
+        <h2 class="page_title">Past Shows</h2>
+        <ul>
+            <li><a href="#show-past-1">15th June 2002 - Summer Jam Festival</a></li>
+            <li><a href="#show-past-2">3rd April 2006 - Spring Rock Concert</a></li>
+            <li><a href="#show-past-3">20th January 2010 - Winter Night Music</a></li>
+        </ul>
     
 
+    <!-- Past Shows Details -->
+    <section class="shows-section">
+        <div class="show-item" id="show-past-1">
+            <img src="imgs_folder/show_summer_jam.jpg" alt="Show Image" class="show-image">
+            <div class="show-details">
+                <h2 class="show-title">Summer Jam Festival</h2>
+                <p class="show-description">Relive the memories of Summer Jam Festival 2002, where we brought the heat with energetic performances and vibrant summer vibes.</p>
+            </div>
+        </div>
+
+        <div class="show-item" id="show-past-2">
+            <img src="imgs_folder/show_The-Smiths-GettyImages.webp" alt="Show Image" class="show-image">
+            <div class="show-details">
+                <h2 class="show-title">Spring Rock Concert</h2>
+                <p class="show-description">The Spring Rock Concert in April 2006 rocked the city with an unforgettable lineup of amazing performances.</p>
+            </div>
+        </div>
+
+        <div class="show-item" id="show-past-3">
+            <img src="imgs_folder/show_winter_night.jpg" alt="Show Image" class="show-image">
+            <div class="show-details">
+                <h2 class="show-title">Winter Night Music</h2>
+                <p class="show-description">Winter Night Music in January 2010 brought warmth and joy to a cold evening with soulful performances and a magical ambiance.</p>
+            </div>
+        </div>
+    </section>
+</section>
 
 
 
 
 
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
-            <p>Follow us on <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a>, and <a href="https://twitter.com">Twitter</a></p>
-        </footer>
 
 
 
 
-        <script src="js_folder/app.js"></script>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
+        <p>Follow us on <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a>, and <a href="https://twitter.com">Twitter</a></p>
+    </footer>
+
+    <script src="js_folder/app.js"></script>
+    <script>
+        // JavaScript function to filter shows
+        function filterShows() {
+            const filter = document.getElementById("showFilter").value;
+            const upcomingSection = document.getElementById("upcoming-shows");
+            const pastSection = document.getElementById("past-shows");
+
+            if (filter === "upcoming") {
+                upcomingSection.style.display = "block";
+                pastSection.style.display = "none";
+            } else if (filter === "past") {
+                upcomingSection.style.display = "none";
+                pastSection.style.display = "block";
+            } else {
+                // Show all
+                upcomingSection.style.display = "block";
+                pastSection.style.display = "block";
+            }
+        }
+
+        // Set initial filter (Show all by default)
+        window.onload = function() {
+            filterShows();
+        };
+    </script>
 </body>
+
 </html>
