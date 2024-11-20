@@ -8,19 +8,18 @@ body {
 }
 
 
-header{
-    background-color: #4a4a4a; /* Darker gray for header */
-    color: #f9f9f9; /* Light text color */
-    padding: 5px 0; /* Increased padding for better spacing */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-    position: relative; /* Fixed position to always show at the top */
-    width: 100%; /* Full width */
-    top: 0; /* Align to top */
-    left: 0; /* Align to left */
+/* header{
+    color: #f9f9f9; 
+    padding: 5px 0; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    position: relative; 
+    width: 100%; 
+    top: 0; 
+    left: 0; 
     z-index: 1000;
-    transition: transform 0.3s ease; /* Smooth transition for the navbar */
+    transition: transform 0.3s ease;  
 }
-
+ */
 
 /* /////////////////////////////    interactive nav bar when hover  ///////////////////////////////////////////*/
 
@@ -52,7 +51,7 @@ header nav ul li a {
 .nav-links li a:hover {
     text-decoration: underline; /* Underline on hover */
     transform: translateY(-6px); /* Move up slightly */
-    color: #fce38a; /* Hover color for links */
+    color: #F3C623; /* Hover color for links */
 }
 
 /* Ensure the rest of the layout is not affected */
@@ -60,7 +59,7 @@ header nav ul li a {
 .nav-links li a:active {
     text-decoration: underline; /* Underline on hover */
     transform: translateY(0px); /* Reset position when clicked */
-    color: #fce38a; /* Hover color for links */
+    color: #F3C623; /* Hover color for links */
     
     
 }
@@ -72,9 +71,8 @@ header nav ul li a {
     justify-content: space-between;
     align-items: center;
     
-    background-color: #4a4a4a; /* Darker gray for navbar */
-    color: white;
-    background-color: #765c48;
+    background-color: #10375C; /* Darker gray for navbar */
+    
     padding: 15px 30px;
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
@@ -93,18 +91,6 @@ header nav ul li a {
     text-decoration: none;
     font-size: 24px;
 }
-/* 
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 0px;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-} */
 
 
 
@@ -281,27 +267,26 @@ form textarea {
 
 
 
+/* 
 
-
-/* Flex Container styles */
 .flex-container {
     
     display: flex;
-    justify-content: space-around; /* Spaces items evenly */
-    align-items: center; /* Centers the items vertically */
-    background-color: #f8b400; /* Background for visibility */
-    padding: 10px; /* Added padding for visibility */
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: #f8b400; 
+    padding: 10px; 
 }
 
 .flex-item {
-    background-color: #ff5722; /* back ground colour for items */
-    padding: 15px; /*  padding for spacing */
+    background-color: #ff5722; 
+    padding: 15px; 
     color: white;
     text-align: center;
     font-size: 18px;
-    flex: 1; /* Each item will take up equal space */
-    margin: 5px; /* margin for  spacing */
-}
+    flex: 1; 
+    margin: 5px; 
+} */
 
 /* Responsive Navbar Styles */
 .menu-icon {
@@ -326,7 +311,7 @@ form textarea {
         position: fixed;
         top: 109px;
         right: 0;
-        background-color: #4a4a4ace; /* Darker background for dropdown */
+        background-color: #10375cd2; /* Darker background for dropdown */
         width: 100%;
         text-align: center;
         
@@ -392,7 +377,10 @@ form textarea {
     padding-top: 15%;
 }
 
+.store-items .item:hover {
+    background-color: #b298ab; /* Light purple on hover */
 
+}
 
 
 /* //////////////////////////////////// */
@@ -525,7 +513,7 @@ form button:active,
 #modalTitle {
     font-family: 'Playfair Display', serif; /* Vintage font */
     font-size: 24px;
-    color: #7c4d99; /* Vintage purple */
+    color: #10375C; 
     text-align: center;
 }
 
@@ -568,7 +556,7 @@ form button:active,
 
 
 .shows-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(132, 134, 119, 0.5)), url('https://img.freepik.com/premium-photo/symphony-instruments-vibrant-collage-musical-tools_435119-69168.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.716), rgba(132, 134, 119, 0.5)), url('https://img.freepik.com/premium-photo/symphony-instruments-vibrant-collage-musical-tools_435119-69168.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding: 55px;
@@ -580,7 +568,7 @@ form button:active,
     justify-content: space-between; /* This aligns the image and the content side by side */
     margin-bottom: 100px;
     padding: 55px;
-    background-color: rgba(255, 255, 255, 0.89); /* Light background for better text readability */
+    background-color: rgba(144, 146, 246, 0.855); /* Light background for better text readability */
     border-radius: 10px;
     flex-wrap: wrap;
     padding-bottom: 75px;
@@ -776,7 +764,7 @@ form button:active,
 }
 
 .member {
-    background-color: #ffeb3b; /* Yellow background for each member */
+    background-color: #e039b74f; /* ********** background colour for image container*/
     padding: 20px;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
@@ -787,7 +775,7 @@ form button:active,
 .member:hover {
     transform: translateY(-5px); /* Hover effect to lift up the card */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-    background-color: blue;
+    background-color: #b298ab;
 }
 .member img {
     width: 90%; /* Adjust the width to leave space on the sides */
