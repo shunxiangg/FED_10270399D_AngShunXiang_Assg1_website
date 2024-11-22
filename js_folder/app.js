@@ -7,10 +7,22 @@
 const menuIcon = document.getElementById("menuIcon");
 const navLinks = document.getElementById("navLinks");
 
-// Toggle nav visibility when menu icon is clicked
 menuIcon.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
+
+document.addEventListener('click', (event) => {
+    if (!navLinks.contains(event.target) && event.target !== menuIcon) {
+        navLinks.classList.remove('active');
+    }
+});
+
+
+
+
+
+
+
 
 
 // Filter photos by category
