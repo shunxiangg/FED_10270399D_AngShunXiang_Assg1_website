@@ -8,18 +8,7 @@ body {
 }
 
 
-/* header{
-    color: #f9f9f9; 
-    padding: 5px 0; 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    position: relative; 
-    width: 100%; 
-    top: 0; 
-    left: 0; 
-    z-index: 1000;
-    transition: transform 0.3s ease;  
-}
- */
+
 
 /* /////////////////////////////    interactive nav bar when hover  ///////////////////////////////////////////*/
 
@@ -57,8 +46,8 @@ header nav ul li a {
 /* Ensure the rest of the layout is not affected */
 .nav-links li a.active,
 .nav-links li a:active {
-    text-decoration: underline; /* Underline on hover */
-    transform: translateY(0px); /* Reset position when clicked */
+    text-decoration: underline; 
+    transform: translateY(0px); 
     color: #F3C623; /* Hover color for links */
     
     
@@ -76,6 +65,7 @@ header nav ul li a {
     padding: 15px 30px;
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 .navbar a:hover {
     background-color: #d98550;
@@ -107,6 +97,7 @@ header nav ul li a {
 
 /* Section styles */
 section {
+    
     margin: 20px auto;
     max-width: 3000px;
     text-align: center;
@@ -153,26 +144,11 @@ footer p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
 }
 
-/* .home-intro h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #8e24aa; 
-} */
-
-/* .home-intro p {
-    font-size: 1.2em;
-} */
 
 
-/* Card styles
-.card {
-    width: 100%; 
-    max-width: 400px; 
-    margin: 20px auto; 
-    background-color: #ffe082; 
-    border-radius: 10px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-} */
+
+
+
 
 
 
@@ -237,21 +213,7 @@ form textarea {
 
 
 
-    /* form button {
-        margin-top: 15px;
-        padding: 10px 20px;
-        background-color: #6a1b9a; 
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1.1em;
-        transition: background-color 0.3s; 
-    }
 
-    form button:hover {
-        background-color: #8e24aa; 
-    } */
 
     #thankYouMessage {
         margin-top: 20px;
@@ -266,27 +228,6 @@ form textarea {
 
 
 
-
-/* 
-
-.flex-container {
-    
-    display: flex;
-    justify-content: space-around; 
-    align-items: center; 
-    background-color: #f8b400; 
-    padding: 10px; 
-}
-
-.flex-item {
-    background-color: #ff5722; 
-    padding: 15px; 
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    flex: 1; 
-    margin: 5px; 
-} */
 
 /* Responsive Navbar Styles */
 .menu-icon {
@@ -567,7 +508,7 @@ form button:active,
     display: flex;
     justify-content: space-between; /* This aligns the image and the content side by side */
     margin-bottom: 100px;
-    padding: 55px;
+    padding: 40px;
     background-color: rgba(144, 146, 246, 0.855); /* Light background for better text readability */
     border-radius: 10px;
     flex-wrap: wrap;
@@ -652,20 +593,48 @@ form button:active,
 
 
 
-
 /* Mobile view for responsiveness */
 @media (max-width: 768px) {
     .show-item {
-        flex-direction: column;
+        flex-direction: column; /* Stacks the content vertically on small screens */
         text-align: center;
+        padding: 40px;
     }
 
-    .show-image, .show-details {
-        width: 100%;
+    .show-image {
+        width: 100%; /* Reduce the image width for mobile */
+        margin: 0 auto 20px auto; /* Center the image and add spacing below */
+        height: auto; /* Maintain aspect ratio */
     }
 
-    
+    .show-details {
+        width: 100%; /* Take up full width for mobile */
+        padding-left: 0; /* Remove left padding to fit better on small screens */
+    }
+
+    .show-title {
+        font-size: 24px; /* Smaller font for mobile */
+    }
+
+    .show-description {
+        font-size: 14px; /* Smaller description font for better readability on mobile */
+    }
+
+    .buy-ticket {
+        font-size: 1em; /* Adjust button font size for mobile */
+        height: 45px; /* Adjust button height for mobile */
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -794,8 +763,6 @@ form button:active,
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace; /* Retro font */
 }
-
-
 
 
 
