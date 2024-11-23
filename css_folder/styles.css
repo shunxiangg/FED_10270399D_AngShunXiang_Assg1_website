@@ -383,12 +383,10 @@ form textarea {
     cursor: pointer;
 }
 
-/* .close:hover,
-.close:focus {
+.close:hover{
     color: black;
-    text-decoration: none;
     cursor: pointer;
-} */
+}
 
 /* //////////////////////////////////// */
 
@@ -402,34 +400,28 @@ form textarea {
 form button,
 .button-container {
     margin: 20px auto;
-   
     padding: 12px 25px;
-    background-color: #d2691e; /* buy now buttion colour */
+    font-weight: bold;
+    background-color: #d9534f;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.2em;
-    font-family: 'Courier New', Courier, monospace; /* Retro font ?? i guess */
+    font-family: 'Courier New', Courier, monospace;
     
     /* 3D effect */
     box-shadow: 0 6px #8b4513; /* Shadow for 3D effect with darker shade */
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; /* when refresh page the button will go into position */
-
-
-
-
-        /* Set fixed width and height */
-        width: 150px; /* Fixed width */
-        height: 50px; /* Fixed height */
-       
+    width: 150px; 
+    height: 50px; 
         
 }
 
 /* Button hover effect */
 form button:hover,
 .button-container:hover {
-    background-color: #ff6347; /* Tomato color on hover */
+    background-color: #d9534f; /* Tomato color on hover */
     transform: translateY(-4px); /* Moves the button up slightly to pop */
     box-shadow: 0 10px #8b4513; /* Deeper shadow on hover */
     font-family: 'Dancing Script', cursive; /* Retro font */
@@ -509,7 +501,7 @@ form button:active,
     justify-content: space-between; /* This aligns the image and the content side by side */
     margin-bottom: 100px;
     padding: 40px;
-    background-color: rgba(144, 146, 246, 0.855); /* Light background for better text readability */
+    background-color: rgba(186, 187, 241, 0.855); /* Light background for better text readability */
     border-radius: 10px;
     flex-wrap: wrap;
     padding-bottom: 75px;
@@ -571,10 +563,9 @@ form button:active,
     
     /* 3D effect */
     box-shadow: 0 6px #8b4513; /* Shadow for 3D effect with darker shade */
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; /* when refresh page the button will go into position */
-    /* Set fixed width and height */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; 
   
-    height: 50px; /* Fixed height */
+    height: 50px; 
    
 }
 
@@ -582,14 +573,30 @@ form button:active,
     background-color: #ff6347; /* Tomato color on hover */
     transform: translateY(-4px); /* Moves the button up slightly to pop */
     box-shadow: 0 10px #8b4513; /* Deeper shadow on hover */
-    font-family: 'Dancing Script', cursive; /* Retro font */
+    
 
 }
 
 
+.ShowPast {
+    margin: 20px auto;
 
-
-
+    padding: 12px 25px;
+    background-color: #b64f7f; /* buy now buttion colour */
+    color: rgb(189, 175, 175);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace; /* Retro font ?? i guess */
+    
+    /* 3D effect */
+    box-shadow: 0 6px #af1146; 
+ 
+  
+    height: 50px; 
+   
+}
 
 
 

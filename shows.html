@@ -36,24 +36,15 @@
         </nav>
     </header>
 
-
-<!-- Filter Section -->
-<section id="filter-section" class="filter-container">
-    <label for="showFilter" class="filter-label">Filter Shows: </label>
-    <select id="showFilter" class="filter-dropdown" onchange="filterShows()">
-        <option value="all">All Shows</option>
-        <option value="upcoming">Upcoming Shows</option>
-        <option value="past">Past Shows</option>
-    </select>
-</section>
-
-
-
-
-
-
-
-
+    <!-- Filter Section -->
+    <section id="filter-section" class="filter-container">
+        <label for="showFilter" class="filter-label">Filter Shows: </label>
+        <select id="showFilter" class="filter-dropdown" onchange="filterShows()">
+            <option value="all">All Shows</option>
+            <option value="upcoming">Upcoming Shows</option>
+            <option value="past">Past Shows</option>
+        </select>
+    </section>
 
     <!-- Shows Section -->
     <section id="upcoming-shows" class="dash">
@@ -72,7 +63,7 @@
             <div class="show-details">
                 <h2 class="show-title">How Soon is Now</h2>
                 <p class="show-description">Join us for an unforgettable night of live music at the Ritz Manchester in October 2027, featuring talented singers and a dynamic band. Experience a harmonious journey that will captivate your heart and elevate every moment.</p>
-                <button class="buy-ticket">Buy Tickets</button>
+                <button class="buy-ticket" onclick="openModal()">Buy Tickets</button>
             </div>
         </div>
 
@@ -81,7 +72,7 @@
             <div class="show-details">
                 <h2 class="show-title">Rock at the Park</h2>
                 <p class="show-description">Join us for "Rock in the Park" at the Brixton Ace in London on 15th November 2027. Enjoy an electrifying night of live music with talented singers and a dynamic band, as each performance takes you on a captivating journey that elevates every moment.</p>
-                <button class="buy-ticket">Buy Tickets</button>
+                <button class="buy-ticket" onclick="openModal()">Buy Tickets</button>
             </div>
         </div>
 
@@ -90,11 +81,13 @@
             <div class="show-details">
                 <h2 class="show-title">Young at Beachfront</h2>
                 <p class="show-description">Join us for a magical evening of live music at a stunning beachfront wedding on 1st December 2027. Featuring talented singers and a dynamic band, every performance will captivate hearts and elevate the moment in this unforgettable celebration.</p>
-                <button class="buy-ticket">Buy Tickets</button>
+                <button class="buy-ticket" onclick="openModal()">Buy Tickets</button>
             </div>
         </div>
     </section>
 </section>
+
+
 
 
 
@@ -116,7 +109,7 @@
             <div class="show-details">
                 <h2 class="show-title">Summer Jam Festival</h2>
                 <p class="show-description">Relive the memories of Summer Jam Festival 2002, where we brought the heat with energetic performances and vibrant summer vibes.</p>
-                <button class="buy-ticket">Buy Tickets</button>
+                <button class="ShowPast">Show Past</button>
             </div>
         </div>
 
@@ -125,7 +118,7 @@
             <div class="show-details">
                 <h2 class="show-title">Spring Rock Concert</h2>
                 <p class="show-description">The Spring Rock Concert in April 2006 rocked the city with an unforgettable lineup of amazing performances.</p>
-                <button class="buy-ticket">Buy Tickets</button>
+                <button class="ShowPast">Show Past</button>
             </div>
         </div>
 
@@ -134,7 +127,7 @@
             <div class="show-details">
                 <h2 class="show-title">Winter Night Music</h2>
                 <p class="show-description">Winter Night Music in January 2010 brought warmth and joy to a cold evening with soulful performances and a magical ambiance.</p>
-                <button class="buy-ticket">Buy Tickets</button>
+                <button class="ShowPast">Show Past</button>
             </div>
         </div>
     </section>
@@ -146,49 +139,241 @@
 
 
 
+<!-- Ticket Form -->
+<div id="ticketModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Sign Up for Tickets</h2>
+        <form id="ticketForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="showSelect">Select Show:</label>
+            <select id="showSelect" name="showSelect" required>
+                <option value="How Soon is Now">How Soon is Now - October 2027</option>
+                <option value="Rock at the Park">Rock at the Park - 15th November 2027</option>
+                <option value="Young at Beachfront">Young at Beachfront - 1st December 2027</option>
+            </select>
+
+            <label for="seating">Seating Preference (Multi-Select):</label>
+            <select id="seating" name="seating" multiple>
+                <option value="Front Row">Front Row</option>
+                <option value="Balcony">Balcony</option>
+                <option value="VIP">VIP</option>
+            </select>
+
+            <label for="quantity">Number of Tickets:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
 
 
 
 
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
-        <p>Follow us on <a href="https://facebook.com" target="_blank">Facebook</a>, <a href="https://instagram.com" target="_blank">Instagram</a>, and <a href="https://twitter.com" target="_blank">Twitter</a></p>
-    </footer>
-
-    <!-- audio -->
-    <audio id="background-music" autoplay loop>
-        <source src="videoAudio_folder/80x27s-old-school-rock-248901.mp3" type="audio/mpeg">
-    </audio>
 
 
-    <script src="js_folder/app.js"></script>
-    <script>
-        // JavaScript function to filter shows
-        function filterShows() {
-            const filter = document.getElementById("showFilter").value;
-            const upcomingSection = document.getElementById("upcoming-shows");
-            const pastSection = document.getElementById("past-shows");
 
-            if (filter === "upcoming") {
-                upcomingSection.style.display = "block";
-                pastSection.style.display = "none";
-            } else if (filter === "past") {
-                upcomingSection.style.display = "none";
-                pastSection.style.display = "block";
-            } else {
-                // Show all
-                upcomingSection.style.display = "block";
-                pastSection.style.display = "block";
-            }
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
+    <p>Follow us on <a href="https://facebook.com" target="_blank">Facebook</a>, <a href="https://instagram.com" target="_blank">Instagram</a>, and <a href="https://twitter.com" target="_blank">Twitter</a></p>
+</footer>
+
+<!-- audio -->
+<audio id="background-music" autoplay loop>
+    <source src="videoAudio_folder/80x27s-old-school-rock-248901.mp3" type="audio/mpeg">
+</audio>
+
+<script src="js_folder/app.js"></script>
+<script>
+    // upcoming shows
+    function openModal() {
+        document.getElementById("ticketModal").style.display = "block";
+    }
+
+    // 
+    function closeModal() {
+        document.getElementById("ticketModal").style.display = "none";
+    }
+
+    // 
+    function filterShows() {
+        const filter = document.getElementById("showFilter").value;
+        const upcomingSection = document.getElementById("upcoming-shows");
+        const pastSection = document.getElementById("past-shows");
+
+        if (filter === "upcoming") {
+            upcomingSection.style.display = "block";
+            pastSection.style.display = "none";
+        } else if (filter === "past") {
+            upcomingSection.style.display = "none";
+            pastSection.style.display = "block";
+        } else {
+            // Show all
+            upcomingSection.style.display = "block";
+            pastSection.style.display = "block";
         }
+    }
 
-        // Set initial filter (Show all by default)
-        window.onload = function() {
-            filterShows();
-        };
-    </script>
+</script>
+
+<style>
+.show-past {
+    margin: 20px auto;
+   
+    padding: 12px 25px;
+    background-color: #EE66A6; /* buy now buttion colour */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace; /* Retro font ?? i guess */
+    /* 3D effect */
+    box-shadow: 0 6px #D91656; /* Shadow for 3D effect with darker shade */
+    height: 50px; /* Fixed height */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #f4e1c1; /* Light cream background for a vintage feel */
+    margin: 5% auto;
+    padding: 20px;
+    border: 6px solid #f3e5cd; /* Dark border for contrast */
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+
+
+.close:hover,
+.close:focus {
+    color: #333; /* Vintage red hover effect */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace; /* Old-school typewriter font */
+    font-size: 16px;
+    color: #333;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid #929292; /* Lighter border for input fields */
+    border-radius: 5px;
+    
+}
+
+input{
+    width: 100%;
+    max-width: 100%;
+}
+
+select {
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff9db; 
+}
+
+
+
+
+button:hover {
+    background-color: #d9534f; /* Vintage red on hover */
+}
+
+/* Multi-Select Styling */
+select[multiple] {
+    height: 100%;
+    width: 100%;
+    
+}
+
+/* Styling for the modal title */
+h2 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Centered Modal */
+.modal-content {
+    width: 100%;
+}
+
+/* Submit Button Adjustment */
+button[type="submit"] {
+    align-self: center;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #d9534f;
+    border-radius: 5px;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* Modal Content Adjustments for Smaller Screens */
+    .modal-content {
+        width: 90%; /* Make modal take up most of the screen */
+        margin: 10% auto; /* Adjust the margin for better centering */
+        padding: 15px; /* Add some space inside the modal */
+    }
+
+    /* Form adjustments for smaller screens */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Reduce gap between elements */
+        padding: 0 20px; /* Add some padding on sides */
+    }
+}
+
+
+</style>
 </body>
 
 </html>
