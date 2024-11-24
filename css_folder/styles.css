@@ -775,6 +775,7 @@ form button:active,
 }
 
 .band-members {
+    padding: 5%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
     gap: 30px; 
@@ -788,6 +789,7 @@ form button:active,
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    
 }
 
 .member:hover {
