@@ -63,7 +63,7 @@ header nav ul li a {
     background-color: #10375C; /* Darker gray for navbar */
     
     padding: 15px 30px;
-    padding: 20px;
+    padding: 18px;
     font-family: 'Courier New', Courier, monospace;
     
 }
@@ -132,9 +132,9 @@ header nav ul li a {
 /* Section styles */
 section {
     margin: auto;
-    max-width: 100%;
+    max-width: 95%;
     text-align: center;
-    padding: 2px;
+    padding: 20px;
 
 }
 
@@ -348,6 +348,8 @@ form textarea {
 
 /* Store Page Styles */
 /* Container for each item */
+
+
 .store-items {
     
     display: grid;
