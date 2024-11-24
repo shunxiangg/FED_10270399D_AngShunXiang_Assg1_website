@@ -29,9 +29,9 @@ header nav ul li a {
     color: #f9f9f9; /* text color */
     text-decoration: none;
     font-size: 1.3em; /* navigation bar words */
-    padding: 10px; /* padding for navigation bar area */
+    padding: 10px; 
     transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
-    display: inline-block; /*          */
+    display: inline-block; 
     position: relative; /* Allows for absolute positioning of child elements */
 }
 
@@ -49,7 +49,6 @@ header nav ul li a {
     text-decoration: underline; 
     transform: translateY(0px); 
     color: #F3C623; /* Hover color for links */
-    
     
 }
 
@@ -122,8 +121,6 @@ header nav ul li a {
 
 
 
-
-
 .dash{
     border: 3px dashed #4a4a4a;
 }
@@ -188,8 +185,6 @@ footer p {
 }
 
 
-
-
 .home-intro {
     background-color: #e3f2fd; /* Light blue background */
     padding: 50px;
@@ -202,16 +197,10 @@ footer p {
 
 
 
-
-
-
-
-
-
 .page_title{
     font-size: 2.5em;
     color: #ff5722; /* Bright orange for headings */
-    padding: 5px;
+    padding: 1px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Added shadow for emphasis */
 
 }
@@ -266,21 +255,12 @@ form textarea {
 }
 
 
-
-
-
-
     #thankYouMessage {
         margin-top: 20px;
         font-size: 1.2em;
         color: rgb(9, 185, 9);
         text-align: center;
     }
-
-
-
-
-
 
 
 
@@ -342,14 +322,8 @@ form textarea {
 
 
 
-
-
-
-
 /* Store Page Styles */
 /* Container for each item */
-
-
 .store-items {
     
     display: grid;
@@ -379,7 +353,6 @@ form textarea {
     background-color: #b298ab; /* Light purple on hover */
 
 }
-
 
 /* //////////////////////////////////// */
 
@@ -495,8 +468,6 @@ form button:active,
 
 
 
-
-
 /*store page pop up*/
 
 /* Modal Title */
@@ -521,11 +492,6 @@ form button:active,
     color: #333;
     margin: 10px 0;
 }
-
-
-
-
-
 
 
 
@@ -559,8 +525,6 @@ form button:active,
     transform: translate(2px, 2px);
     box-shadow: 1px 1px 0 #10375C;
 }
-
-
 
 
 
@@ -802,7 +766,6 @@ form button:active,
 
 
 
-
 #about p {
     font-size: 1.2em;
     color: #333; 
@@ -849,25 +812,6 @@ form button:active,
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace; /* Retro font */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
