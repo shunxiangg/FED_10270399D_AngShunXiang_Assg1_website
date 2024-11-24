@@ -475,7 +475,31 @@ form button:active,
 
 
 
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; 
+    color: #333333; 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #333333; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 3px 3px 0 #333333; 
+    width: 70%;
+}
 
+.button-link:hover {
+    background-color: #333333; 
+    color: #ffcc00; 
+    transform: translate(-2px, -2px); 
+    box-shadow: 5px 5px 0 #666666;
+}
+
+.button-link:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #333333;
+}
 
 
 
