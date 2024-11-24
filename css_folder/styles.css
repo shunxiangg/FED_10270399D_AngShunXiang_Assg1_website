@@ -484,11 +484,11 @@ form button:active,
     color: #10375C; 
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 3px 3px 0 #10375C; 
     width: 70%;
-    gap: 20px;
+    margin: 8px 0;
 }
 
 .button-link:hover {
@@ -563,9 +563,10 @@ form button:active,
 
 /* Show title styling */
 .show-title {
-    font-size: 34px;
+    font-size: 44px;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'Gochi Hand', cursive; /* Apply Gochi Hand font */
 }
 
 /* Show description styling */
@@ -646,7 +647,7 @@ form button:active,
     }
 
     .show-title {
-        font-size: 24px; 
+        font-size: 34px; 
     }
 
     .show-description {
