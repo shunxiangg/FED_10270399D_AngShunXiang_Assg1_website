@@ -123,6 +123,7 @@ header nav ul li a {
 
 .dash{
     border: 3px dashed #4a4a4a;
+    
 }
 
 
@@ -503,8 +504,8 @@ form button:active,
 .button-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffcc00; 
-    color: #10375C; 
+    background-color: #235e96; 
+    color: #d7d4ff; 
     text-decoration: none;
     font-weight: bold;
     border-radius: 50px;
@@ -516,7 +517,7 @@ form button:active,
 
 .button-link:hover {
     background-color: #10375C; 
-    color: #ffcc00; 
+    color: #655aff; 
     transform: translate(-2px, -2px); 
     box-shadow: 5px 5px 0 #44709c;
 }
@@ -646,7 +647,9 @@ form button:active,
    
 }
 
-
+#past-shows{
+    margin-top: 50px;
+}
 
 /* Mobile view for responsiveness */
 @media (max-width: 768px) {
