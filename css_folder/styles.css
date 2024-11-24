@@ -75,6 +75,40 @@ header nav ul li a {
 
 
 
+/* Styling for the moving logo image */
+.logo img {
+    width: 100px;  
+    height: auto;  
+    background-color: #655aff;
+    border-radius: 10px;
+    position: relative;
+    animation: logoAnimation 1.5s infinite;
+}
+@keyframes logoAnimation {
+    0% {
+        transform: translate(0, 0);
+        filter: brightness(90%);}
+    15% {
+        transform: translate(-3px, -3px);
+        filter: brightness(130%);
+    }
+    30% {
+        transform: translate(2px, 4px);
+        filter: brightness(90%);
+}
+    45%{
+        transform: translate(-1px, 2px);
+        filter: brightness(125%);
+    }
+    60% {
+        transform: translate(3px, -4px);
+        filter: brightness(75%);
+    }
+    100% {
+        transform: translate(0, 0);
+        filter: brightness(110%);}
+}
+
 
 .logo a {
     color: white;
@@ -97,14 +131,11 @@ header nav ul li a {
 
 /* Section styles */
 section {
-    
-    margin: 20px auto;
-    max-width: 3000px;
+    margin: auto;
+    max-width: 100%;
     text-align: center;
-    
-    padding: 20px; /* Added padding to sections for better spacing */
-   
-     /* Dashed border for a retro look ??? */
+    padding: 2px;
+
 }
 
 h2 {
@@ -135,6 +166,30 @@ footer p {
 }
 
 /* Home Page Styles (index.html) */
+
+/*spinning song disk*/
+#index_images {
+    height: 400px;
+    width: auto;
+    display: block;
+    margin: auto;
+    animation: spin 10s linear infinite;
+    box-shadow: none;
+}
+
+/* Keyframes for spinning effect */
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Start from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+}
+
+
+
+
 .home-intro {
     background-color: #e3f2fd; /* Light blue background */
     padding: 50px;
@@ -792,7 +847,6 @@ form button:active,
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace; /* Retro font */
 }
-
 
 
 
