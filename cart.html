@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css_folder/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <!-- Add your navigation items here -->
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="shopping_cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <div id="cartTotal"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.onload = function() {
+    // Retrieve cart items from localStorage
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    // Get the cart container and total elements
+    let cartItemsContainer = document.getElementById('cartItems');
+    let cartTotalElement = document.getElementById('cartTotal');
+
+    // Add items to the cart page
+    cartItems.forEach(item => {
+        let cartItemElement = document.createElement('li');
+        cartItemElement.innerText = `${item.name} - $${item.price.toFixed(2)}`;
+        cartItemsContainer.appendChild(cartItemElement);
+    });
+
+    // Calculate and display the total price
+    let total = cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
+    cartTotalElement.innerText = `Total: $${total}`;
+}
+
+    </script>
+</body>
+</html>

@@ -79,6 +79,54 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 
 
+let modalItemName = '';
+let modalItemPrice = 0;
+let cartTotal = 0;
+
+function showModal(title, imageSrc, shortDescription, longDescription, price) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalImage').src = imageSrc;
+    document.getElementById('modalShortDescription').innerText = shortDescription;
+    document.getElementById('modalLongDescription').innerText = longDescription;
+
+    modalItemName = title;
+    modalItemPrice = price;
+
+    document.getElementById('productModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('productModal').style.display = 'none';
+}
+
+function addModalItemToCart() {
+    if (modalItemName && modalItemPrice) {
+        // Add item to the cart
+        let cartItemsList = document.getElementById('cartItems');
+        let newItem = document.createElement('li');
+        newItem.innerText = `${modalItemName} - $${modalItemPrice.toFixed(2)}`;
+        cartItemsList.appendChild(newItem);
+
+        // Update the total price
+        cartTotal += modalItemPrice;
+        document.getElementById('cartTotal').innerText = 'Total: $' + cartTotal.toFixed(2);
+
+        // Close the modal
+        closeModal();
+    }
+}
+
+function addToCart(name, price) {
+    // Add item to cart directly from the store page
+    let cartItemsList = document.getElementById('cartItems');
+    let newItem = document.createElement('li');
+    newItem.innerText = `${name} - $${price.toFixed(2)}`;
+    cartItemsList.appendChild(newItem);
+
+    // Update the total price
+    cartTotal += price;
+    document.getElementById('cartTotal').innerText = 'Total: $' + cartTotal.toFixed(2);
+}
 
 
 function showModal(title, imageSrc, shortDescription, longDescription) {
