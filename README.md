@@ -15,6 +15,8 @@ Welcome to my imaginative retro-inspired website! This project brings to life th
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Testing](#testing)
+  - [Contact Form Testing](#Contact-Form-Testing)
+  - [Browser and Device Testing](#Browser-and-Device-Testing)
 - [Credits](#credits)
 -[Acknoledgements](#acknowledgements)
 
@@ -34,7 +36,7 @@ This retro-inspired website is designed for users who appreciate nostalgia and v
 
 ### Wireframes
 The design process included the creation of wireframes and mockups in Figma to map out the layout of the website before creating this website. 
-Figma Link: [(https://www.figma.com/design/mVbceNVO3Hkt7LkwaJXwlS/FED_AngShunXiang?t=PFJn94sFUJRxUmaA-1)]
+Figma Link: [[Insert Adobe XD share URL here](https://www.figma.com/design/mVbceNVO3Hkt7LkwaJXwlS/FED_AngShunXiang?t=PFJn94sFUJRxUmaA-1)]
 
 ## Features
 - **Vintage items**: Old items, Music, img, etc
@@ -74,6 +76,16 @@ To run this project locally, follow these steps:
 
 ## Testing
 
+### Contact Form Testing
+1. Go to the "Contact Us" page.
+2. Attempt to submit the empty form to ensure an error message appears for required fields.
+3. Enter an invalid email address to ensure appropriate error handling.
+4. Complete the form with valid inputs and verify that a success message is displayed.
+
+### Browser and Device Testing
+The project has been tested on modern web browsers (Chrome, Firefox, Edge) and performs as expected. However, it has not yet been fully optimized for television size screens, which is a planned future improvement.
+
+
 ## Credits
 
 - The text for the "Vintage Items" section was inspired by various retro catalogs from the '90s.
@@ -81,12 +93,8 @@ To run this project locally, follow these steps:
 - All images used in this project were sourced from the internet and online archives.
 
 ### Acknowledgements
-- I drew design inspiration from a variety of retro-themed websites and tutorials, which helped me craft the overall aesthetic for this project.
+- I drew design inspiration from a variety of retro-themed websites and tutorials, which helped me craft the overall aesthetic for this project. My interest for the music beats from the early 2000s inspired me to create something that captures the nostalgic vibe of that time. I decided to base my project on a legitimate band, *The Smiths*, although they have already broken up. Through this project, I'm reimagining and recreating something that brings their legacy back to life in a modern, retro-inspired way.
 
 
 ---Enjoy your trip down memory lane with this retro inspired website!---
-
-
-
-
 
