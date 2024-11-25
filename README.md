@@ -12,7 +12,11 @@ Welcome to my imaginative retro-inspired website! This project brings to life th
 - [Features](#features)
   - [Existing Features](#existing-features)
   - [Features Left to Implement](#features-left-to-implement)
-
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Testing](#testing)
+- [Credits](#credits)
+-[Acknoledgements](#acknowledgements)
 
 ## Design Process
 
@@ -50,6 +54,34 @@ Figma Link: [[Insert Adobe XD share URL here](https://www.figma.com/design/mVbce
 - **User Login System** - Plan to implement user authentication for a personalized experience.
 - **More Items** - Expand the gallery to include more retro collectibles from the '80s and '90s.
 
+## Technologies Used
+
+This project uses technologies as given bellow:
+
+- **HTML5** - Structure of the website.
+- **CSS3** - For styling, animations, and retro visual effects.
+- **JavaScript** - To create interactivity and enhance the user experience.
+
+
+## Installation
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+2. Navigate to the project directory:
+  
+3. Open `index.html` in your preferred web browser (Go Live).
+
+## Testing
+
+## Credits
+
+- The text for the "Vintage Items" section was inspired by various retro catalogs from the '90s.
+
+- All images used in this project were sourced from the internet and online archives.
+
+### Acknowledgements
+- I drew design inspiration from a variety of retro-themed websites and tutorials, which helped me craft the overall aesthetic for this project.
 
 
 ---Enjoy your trip down memory lane with this retro inspired website!---
