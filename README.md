@@ -36,7 +36,7 @@ This retro-inspired website is designed for users who appreciate nostalgia and v
 
 ### Wireframes
 The design process included the creation of wireframes and mockups in Figma to map out the layout of the website before creating this website. 
-Figma Link: [[Insert Adobe XD share URL here](https://www.figma.com/design/mVbceNVO3Hkt7LkwaJXwlS/FED_AngShunXiang?t=PFJn94sFUJRxUmaA-1)]
+Figma Link: [(https://www.figma.com/design/mVbceNVO3Hkt7LkwaJXwlS/FED_AngShunXiang?t=PFJn94sFUJRxUmaA-1)]
 
 ## Features
 - **Vintage items**: Old items, Music, img, etc
