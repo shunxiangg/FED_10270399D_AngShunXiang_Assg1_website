@@ -309,11 +309,12 @@ form textarea {
     }
 
     .menu-icon {
-        display: flex; /* Show hamburger icon */
+        display: flex;
     }
 
     .nav-links.active {
-        display: flex; /* Show navi links when active */
+        display: flex;
+        z-index: 9999;
     }
 }
 @media (max-width: 480px) {
