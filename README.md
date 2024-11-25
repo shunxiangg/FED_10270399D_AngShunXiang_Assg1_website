@@ -21,7 +21,6 @@ Welcome to my imaginative retro-inspired website! This project brings to life th
 -[Acknoledgements](#acknowledgements)
 
 ## Design Process
-
 This retro-inspired website is designed for users who appreciate nostalgia and vintage design. The target audience includes individuals seeking a trip down memory lane through classic web elements, old fonts, and vibrant color schemes.
 
 ### User Audience, Intent, and Purpose
@@ -45,7 +44,6 @@ Figma Link: [(https://www.figma.com/design/mVbceNVO3Hkt7LkwaJXwlS/FED_AngShunXia
 - **Interactive Elements**: Fun and engaging interactive elements.
 - **Animation Emelemts**: Fun animations.
 
-
 ### Existing Features
 - **Vintage Color Scheme** - Brings out the feeling of old-school design with bold and vibrant hues.
 - **Retro Fonts** - Uses vintage typography that evokes nostalgia, creating a cohesive retro look.
@@ -55,11 +53,10 @@ Figma Link: [(https://www.figma.com/design/mVbceNVO3Hkt7LkwaJXwlS/FED_AngShunXia
 - **Responsive Design** - Currently, the design is optimized for desktop. Future versions will include responsiveness for mobile devices.
 - **User Login System** - Plan to implement user authentication for a personalized experience.
 - **More Items** - Expand the gallery to include more retro collectibles from the '80s and '90s.
+- **Songs & Videos** - Currently facing difficulties uploading songs and videos to git hub ERROR:[file size too big]
 
 ## Technologies Used
-
 This project uses technologies as given bellow:
-
 - **HTML5** - Structure of the website.
 - **CSS3** - For styling, animations, and retro visual effects.
 - **JavaScript** - To create interactivity and enhance the user experience.
@@ -67,15 +64,11 @@ This project uses technologies as given bellow:
 
 ## Installation
 To run this project locally, follow these steps:
-
 1. Clone the repository:
-
 2. Navigate to the project directory:
-  
 3. Open `index.html` in your preferred web browser (Go Live).
 
 ## Testing
-
 ### Contact Form Testing
 1. Go to the "Contact Us" page.
 2. Attempt to submit the empty form to ensure an error message appears for required fields.
@@ -85,11 +78,8 @@ To run this project locally, follow these steps:
 ### Browser and Device Testing
 The project has been tested on modern web browsers (Chrome, Firefox, Edge) and performs as expected. However, it has not yet been fully optimized for television size screens, which is a planned future improvement.
 
-
 ## Credits
-
 - The text for the "Vintage Items" section was inspired by various retro catalogs from the '90s.
-
 - All images used in this project were sourced from the internet and online archives.
 
 ### Acknowledgements
