@@ -47,13 +47,14 @@ Figma Link: [(https://www.figma.com/design/mVbceNVO3Hkt7LkwaJXwlS/FED_AngShunXia
 ### Existing Features
 - **Vintage Color Scheme** - Brings out the feeling of old-school design with bold and vibrant hues.
 - **Retro Fonts** - Uses vintage typography that evokes nostalgia, creating a cohesive retro look.
-- **Interactive Elements** - Includes engaging buttons and animations to replicate early website interactivity.
+- **Interactive Elements** - Includes engaging buttons, animations and a spinning retro disk.
 
 ### Features Left to Implement
 - **Responsive Design** - Currently, the design is optimized for desktop. Future versions will include responsiveness for mobile devices.
 - **User Login System** - Plan to implement user authentication for a personalized experience.
 - **More Items** - Expand the gallery to include more retro collectibles from the '80s and '90s.
 - **Songs & Videos** - Currently facing difficulties uploading songs and videos to git hub ERROR:[file size too big]
+- **Payment page** - A payment page where users can add up the total amount for items bought and display them in the store, you would follow these steps using JavaScript and DOM manipulation methods like getElementById or querySelector.
 
 ## Technologies Used
 This project uses technologies as given bellow:
