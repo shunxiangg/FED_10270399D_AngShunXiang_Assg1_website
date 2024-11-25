@@ -1,49 +1,60 @@
 # FED_10270399D_AngShunXiang_Assg1_website
 
-
 # Retro Inspired Website
 
-Welcome to my imaginative retro-inspired website! This website brings to life the classic web design of the late '90s and early 2000s, showcasing vibrant colors and nostalgic, old-school elements.
+Welcome to my imaginative retro-inspired website! This project brings to life the classic web design of the late '90s and early 2000s, showcasing vibrant colors and nostalgic, old-school elements.
 
 ## Table of Contents
-- [Introduction](#introduction)
+- [Design Process](#design-process)
+- [User Audience, Intent & Purpose](#User-Audience,Intent-&-Purpose)
+- [My Story](#My-Story)
+- [Wireframes](#Wireframes)
 - [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+  - [Existing Features](#existing-features)
+  - [Features Left to Implement](#features-left-to-implement)
 
-## Introduction
-This website is designed to bring back the feel of the early internet era. It includes various retro design elements and interactive features that provide a nostalgic browsing experience.
 
-## Features 
-- **Vintage items**: Old items, Music, etc
+## Design Process
+
+This retro-inspired website is designed for users who appreciate nostalgia and vintage design. The target audience includes individuals seeking a trip down memory lane through classic web elements, old fonts, and vibrant color schemes.
+
+### User Audience, Intent, and Purpose
+- **User Audience:** The target audience for this website includes fans and potential fans of the band who want to explore the band's history, learn about its members, and keep up to date with upcoming shows. Additionally, it appeals to event organizers or individuals interested in booking the band for live performances.
+- **Intent:** The website's primary intent is to provide a comprehensive platform where users can engage with the band's content, such as listening to their music, viewing their photos and videos, and discovering their latest news or shows. Fans can also use the website to access social media profiles or external resources related to the band.
+- **Purpose:** The site aims to support the band's growth by increasing exposure, selling merchandise, and booking more performances. It serves as a promotional tool for showcasing the band's talents while offering opportunities to engage with their audience and secure more gigs. The addition of interactive elements, such as filtering media and engaging micro-interactions, enhances user experience and keeps the audience engaged.
+
+### My Story
+- **As Retro lover**, I want to explore a website that mimics the aesthetics of the early '80s and 2000s, so that I can experience the visual nostalgia of that era.
+- **As a user**, I want interactive buttons and eye catching animations(the bands logo), so that I can engage with the site in a fun, immersive way.
+- **As a collector of vintage items**, I want to browse a gallery of retro products, so that I can view items.
+
+### Wireframes
+The design process included the creation of wireframes and mockups in Figma to map out the layout of the website before creating this website. 
+Figma Link: [[Insert Adobe XD share URL here](https://www.figma.com/design/mVbceNVO3Hkt7LkwaJXwlS/FED_AngShunXiang?t=PFJn94sFUJRxUmaA-1)]
+
+## Features
+- **Vintage items**: Old items, Music, img, etc
 - **Retro Fonts**: Classic fonts that give the website an authentic retro feel.
-- **Vintage Color Scheme**: A color palette inspired by vintage colors.
+- **Vintage Color Scheme**: Some vintage colors.
 - **Interactive Elements**: Fun and engaging interactive elements.
+- **Animation Emelemts**: Fun animations.
 
-## Technologies Used
-- **HTML5**: For the structure of the website.
-- **CSS3**: For styling and layout.
-- **JavaScript**: For interactive features and animations.
 
-## Installation
-To run this project locally, follow these steps:
+### Existing Features
+- **Vintage Color Scheme** - Brings out the feeling of old-school design with bold and vibrant hues.
+- **Retro Fonts** - Uses vintage typography that evokes nostalgia, creating a cohesive retro look.
+- **Interactive Elements** - Includes engaging buttons and animations to replicate early website interactivity.
 
-1. Clone the repository:
+### Features Left to Implement
+- **Responsive Design** - Currently, the design is optimized for desktop. Future versions will include responsiveness for mobile devices.
+- **User Login System** - Plan to implement user authentication for a personalized experience.
+- **More Items** - Expand the gallery to include more retro collectibles from the '80s and '90s.
 
-2. Navigate to the project directory:
-  
-3. Open `index.html` in your preferred web browser (Go Live).
 
-## Usage
-Explore the website to experience the retro design. Navigate through different sections to see various features and interactive elements.
 
-## Contributing
-No contributions are welcome at the moment!
+---Enjoy your trip down memory lane with this retro inspired website!---
 
-## License
-NiL
 
-Enjoy your trip down memory lane with this retro inspired website!
+
+
+
