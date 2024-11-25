@@ -82,6 +82,9 @@ The project has been tested on modern web browsers (Chrome, Firefox, Edge) and p
 ## Credits
 - The text for the "Vintage Items" section was inspired by various retro catalogs from the '90s.
 - All images used in this project were sourced from the internet and online archives.
+- Spinning disk : [https://www.youtube.com/watch?v=-FNm58Z9GHM&list=PLQBdl5WgVX_V-GhTtenRU9oBt-6Mh54rk&index=1]
+- Hover effects: [https://www.w3schools.com/css/css3_transitions.asp]
+- Animations : [https://www.youtube.com/watch?v=Nloq6uzF8RQ], [https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes]
 
 ### Acknowledgements
 - I drew design inspiration from a variety of retro-themed websites and tutorials, which helped me craft the overall aesthetic for this project. My interest for the music beats from the early 2000s inspired me to create something that captures the nostalgic vibe of that time. I decided to base my project on a legitimate band, *The Smiths*, although they have already broken up. Through this project, I'm reimagining and recreating something that brings their legacy back to life in a modern, retro-inspired way.
