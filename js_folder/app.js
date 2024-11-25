@@ -99,6 +99,20 @@ function closeModal() {
     document.getElementById('productModal').style.display = 'none';
 }
 
+// function addModalItemToCart() {
+//     if (modalItemName && modalItemPrice) {
+        
+//         let cartItemsList = document.getElementById('cartItems');
+//         let newItem = document.createElement('li');
+//         newItem.innerText = `${modalItemName} - $${modalItemPrice.toFixed(2)}`;
+//         cartItemsList.appendChild(newItem);
+
+//         cartTotal += modalItemPrice;
+//         document.getElementById('cartTotal').innerText = 'Total: $' + cartTotal.toFixed(2);
+
+//         closeModal();
+//     }
+// }
 
 function addToCart(name, price) {
     // Add item to cart directly from the store page
@@ -107,7 +121,6 @@ function addToCart(name, price) {
     newItem.innerText = `${name} - $${price.toFixed(2)}`;
     cartItemsList.appendChild(newItem);
 
-    // Update the total price
     cartTotal += price;
     document.getElementById('cartTotal').innerText = 'Total: $' + cartTotal.toFixed(2);
 }
@@ -126,19 +139,16 @@ function addToCart(name, price) {
 
 
 function showModal(title, imageSrc, shortDescription, longDescription) {
-    // Set the modal elements with the passed data
     document.getElementById('modalTitle').innerText = title;
     document.getElementById('modalImage').src = imageSrc;
     document.getElementById('modalShortDescription').innerText = shortDescription;
     document.getElementById('modalLongDescription').innerText = longDescription;
 
-    // Show the modal
     const modal = document.getElementById('productModal');
     modal.style.display = 'block';
 }
 
 function closeModal() {
-    // Hide the modal
     const modal = document.getElementById('productModal');
     modal.style.display = 'none';
 }
