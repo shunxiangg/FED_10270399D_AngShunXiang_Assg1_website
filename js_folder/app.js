@@ -99,22 +99,6 @@ function closeModal() {
     document.getElementById('productModal').style.display = 'none';
 }
 
-function addModalItemToCart() {
-    if (modalItemName && modalItemPrice) {
-        // Add item to the cart
-        let cartItemsList = document.getElementById('cartItems');
-        let newItem = document.createElement('li');
-        newItem.innerText = `${modalItemName} - $${modalItemPrice.toFixed(2)}`;
-        cartItemsList.appendChild(newItem);
-
-        // Update the total price
-        cartTotal += modalItemPrice;
-        document.getElementById('cartTotal').innerText = 'Total: $' + cartTotal.toFixed(2);
-
-        // Close the modal
-        closeModal();
-    }
-}
 
 function addToCart(name, price) {
     // Add item to cart directly from the store page
@@ -127,6 +111,18 @@ function addToCart(name, price) {
     cartTotal += price;
     document.getElementById('cartTotal').innerText = 'Total: $' + cartTotal.toFixed(2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function showModal(title, imageSrc, shortDescription, longDescription) {
