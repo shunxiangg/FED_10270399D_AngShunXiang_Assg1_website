@@ -341,7 +341,8 @@ form textarea {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px; /* Space between items */
     
-    
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 /* Box around Each item in the store */
@@ -363,6 +364,8 @@ form textarea {
     background-color: #b298ab; /* Light purple on hover */
 
 }
+
+
 
 /* //////////////////////////////////// */
 
@@ -725,22 +728,26 @@ form button:active,
     color: #2c2c2c; 
 }
 
-/* Dropdown Styling */
+
+/* Default styling for mobile screens */
 .filter-dropdown {
     padding: 8px;
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: 'Courier New', Courier, monospace;
     border: 2px solid #7a7a7a;
     border-radius: 4px;
-    background-color: #e0dfd1; 
+    background-color: #e0dfd1;
     color: #2c2c2c;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); 
-    width: 180px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
     cursor: pointer;
 }
 
-.filter-dropdown {
-    margin-right: 20px; /* Adds space between the dropdown and button */
+/* Media query for non-mobile (larger) screens */
+@media screen and (min-width: 768px) {
+    .filter-dropdown {
+        margin-right: 20px; /* Adds space between the dropdown and button */
+    }
 }
 
 .button-link {
@@ -766,6 +773,7 @@ form button:active,
     .filter-container {
         flex-direction: column;
         width: 90%;
+        background-color: #e0dfd1;
     }
 
     .filter-label {
@@ -856,5 +864,3 @@ form button:active,
     font-weight: bold;
     padding-left: 7%;
 }
-
-
