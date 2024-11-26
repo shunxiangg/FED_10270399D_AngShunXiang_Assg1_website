@@ -42,18 +42,19 @@
 
 <section>
 <!-- Price Filter Section -->
-<section id="price-filter">
-    <h2>Filter by Price</h2>
-    <label for="price-range">Select Price Range:</label>
-    <select id="price-range">
+<section id="price-filter" class="filter-container">
+    <label for="price-range" class="filter-label">Filter by Price:</label>
+    <select id="price-range" class="filter-dropdown">
         <option value="0-50">Up to $50</option>
         <option value="51-100">$51 - $100</option>
         <option value="101-150">$101 - $150</option>
         <option value="151-200">$151 - $200</option>
         <option value="201-9999">Above $200</option>
     </select>
-    <button onclick="filterByPrice()">Apply Filter</button>
+    <button class="button-link" onclick="filterByPrice()">Apply Filter</button>
 </section>
+
+
 
 </section>
 
@@ -212,7 +213,7 @@
 
 
 <section></section>
-    
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
