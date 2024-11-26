@@ -92,9 +92,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 
 
-//////////////////////
-
-
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
 function addToCart(name, price) {
     // Add item to cart directly from the store page
     let cartItemsList = document.getElementById('cartItems');
@@ -121,6 +121,9 @@ function closeModal() {
     const modal = document.getElementById('productModal');
     modal.style.display = 'none';
 }
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
 
 
 function filterByPrice() {
@@ -157,3 +160,6 @@ function filterByPrice() {
         }
     });
 }
+
+
+

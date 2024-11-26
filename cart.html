@@ -3,49 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="css_folder/styles.css">
 </head>
 <body>
-
     <header>
         <nav class="navbar">
-            <!-- Add your navigation items here -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imgs_folder/smiths-logo.png" alt="The Fictional Band">
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shows.html">Upcoming Shows</a></li>
+                <li><a href="music.html">Music & Videos</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Cart Section -->
-    <section class="shopping_cart">
+    <button class="button-container" onclick="window.location.href='store.html'">Return</button>
+  
+    <section id="checkout">
+        <h1>Checkout</h1>
+
         <h2>Your Cart</h2>
         <ul id="cartItems"></ul>
-        <div id="cartTotal"></div>
+
+        <div id="cartTotal">Total: $0.00</div>
+
+        <button id="checkoutButton">Proceed to Checkout</button>
     </section>
 
     <footer>
         <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
     </footer>
 
+    <script src="js_folder/app.js"></script>
+
     <script>
-        window.onload = function() {
-    // Retrieve cart items from localStorage
-    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-
-    // Get the cart container and total elements
-    let cartItemsContainer = document.getElementById('cartItems');
-    let cartTotalElement = document.getElementById('cartTotal');
-
-    // Add items to the cart page
-    cartItems.forEach(item => {
-        let cartItemElement = document.createElement('li');
-        cartItemElement.innerText = `${item.name} - $${item.price.toFixed(2)}`;
-        cartItemsContainer.appendChild(cartItemElement);
-    });
-
-    // Calculate and display the total price
-    let total = cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
-    cartTotalElement.innerText = `Total: $${total}`;
-}
-
+      
     </script>
 </body>
 </html>
