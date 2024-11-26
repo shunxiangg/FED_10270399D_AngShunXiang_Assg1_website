@@ -69,40 +69,31 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 
 
-let modalItemName = '';
-let modalItemPrice = 0;
-let cartTotal = 0;
+// let modalItemName = '';
+// let modalItemPrice = 0;
+// let cartTotal = 0;
 
-function showModal(title, imageSrc, shortDescription, longDescription, price) {
-    document.getElementById('modalTitle').innerText = title;
-    document.getElementById('modalImage').src = imageSrc;
-    document.getElementById('modalShortDescription').innerText = shortDescription;
-    document.getElementById('modalLongDescription').innerText = longDescription;
+// function showModal(title, imageSrc, shortDescription, longDescription, price) {
+//     document.getElementById('modalTitle').innerText = title;
+//     document.getElementById('modalImage').src = imageSrc;
+//     document.getElementById('modalShortDescription').innerText = shortDescription;
+//     document.getElementById('modalLongDescription').innerText = longDescription;
 
-    modalItemName = title;
-    modalItemPrice = price;
+//     modalItemName = title;
+//     modalItemPrice = price;
 
-    document.getElementById('productModal').style.display = 'block';
-}
-
-function closeModal() {
-    document.getElementById('productModal').style.display = 'none';
-}
-
-// function addModalItemToCart() {
-//     if (modalItemName && modalItemPrice) {
-        
-//         let cartItemsList = document.getElementById('cartItems');
-//         let newItem = document.createElement('li');
-//         newItem.innerText = `${modalItemName} - $${modalItemPrice.toFixed(2)}`;
-//         cartItemsList.appendChild(newItem);
-
-//         cartTotal += modalItemPrice;
-//         document.getElementById('cartTotal').innerText = 'Total: $' + cartTotal.toFixed(2);
-
-//         closeModal();
-//     }
+//     document.getElementById('productModal').style.display = 'block';
 // }
+
+// function closeModal() {
+//     document.getElementById('productModal').style.display = 'none';
+// }
+
+
+
+
+//////////////////////
+
 
 function addToCart(name, price) {
     // Add item to cart directly from the store page
