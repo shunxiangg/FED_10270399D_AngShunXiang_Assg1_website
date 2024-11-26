@@ -83,16 +83,101 @@
 
 
     <script src="js_folder/app.js"></script>
-
+    <script>
+          // JavaScript for typing and deleting effect
+          document.addEventListener("DOMContentLoaded", function() {
+            const textElement = document.getElementById('typing-text');
+            const textContent = textElement.textContent;
+    
+            let currentText = '';
+            let isTyping = true;
+            let textIndex = 0;
+            
+            function typeAndDelete() {
+                if (isTyping) {
+                    // Add one character at a time
+                    currentText += textContent.charAt(textIndex);
+                    textElement.textContent = currentText;
+                    textIndex++;
+    
+                    if (textIndex === textContent.length) {
+                        isTyping = false; 
+                        setTimeout(() => { 
+                            currentText = '';
+                            textElement.textContent = currentText;
+                            textIndex = -0; 
+                            isTyping = true; 
+                        }, 5000); 
+                    }
+                } else {
+                    // Delete one character at a time
+                    currentText = currentText.slice(0, -1);
+                    textElement.textContent = currentText;
+    
+                    if (currentText.length === 0) {
+                        isTyping = true; // Start typing again after deleting
+                    }
+                }
+            }
+    
+            // Add typing class to start typing animation
+            textElement.classList.add('typing');
+    
+            // Set interval to type and delete text with a delay
+            setInterval(typeAndDelete, 150); // Adjust the speed by changing 150
+        });
+    </script>
     
     <style>
-      .spacing{
+        .spacing{
         margin-top: 10%;
         margin-bottom: 0.5%;
         margin-left: 0.5%;
         margin-right: 0.5%;
-      }
-    
+        }
+
+        
+        /* typing and deleting effect */
+        .typing {
+            animation: typing 2s steps(30) 2s forwards;
+        }
+
+        .deleting {
+            animation: deleting 16s steps(100) 2s forwards;
+        }
+
+        /* Typing animation styles */
+        #typing-text {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+            text-align: center; /* Ensure the text is centered */
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            margin: 0 auto;
+        }
+
+        /* Typing animation */
+        @keyframes typing {
+            from {
+                width: -1;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Deleting animation */
+        @keyframes deleting {
+            from {
+                width: 100%;
+            }
+            to {
+                width: -1;
+            }
+        }
+
+            
     
         
     </style>
