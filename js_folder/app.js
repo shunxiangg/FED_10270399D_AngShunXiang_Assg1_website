@@ -130,6 +130,8 @@ function closeModal() {
     const modal = document.getElementById('productModal');
     modal.style.display = 'none';
 }
+
+
 function filterByPrice() {
     // Get the selected price range from the dropdown
     let priceRange = document.getElementById('price-range').value;
