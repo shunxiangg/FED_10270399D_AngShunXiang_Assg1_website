@@ -843,7 +843,7 @@ form button:active,
 .product-price {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.8rem; /* Adjust for readability */
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
     padding-left: 7%;
 }

@@ -141,8 +141,11 @@ function filterByPrice() {
     
     // Loop through each item and check its price
     items.forEach(item => {
-        let priceText = item.querySelector('p').innerText;
-        let price = parseFloat(priceText.split('-')[1].trim().replace('$', ''));
+        // Find the price of the product inside the item
+        let priceText = item.querySelector('.product-price').innerText;
+        
+        // Extract the price from the text (removing '$' and converting to a number)
+        let price = parseFloat(priceText.replace('$', '').trim());
 
         // Show or hide the item based on the selected price range
         if (price >= minPrice && price <= maxPrice) {
