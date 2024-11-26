@@ -204,7 +204,7 @@ footer p {
     color: #ff5722; /* Bright orange for headings */
     padding: 1px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Added shadow for emphasis */
-
+ 
 }
 
 section p, section ul {
@@ -826,22 +826,6 @@ form button:active,
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace; /* Retro font */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

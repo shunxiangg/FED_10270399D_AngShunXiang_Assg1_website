@@ -90,6 +90,7 @@ The project has been tested on modern web browsers (Chrome, Firefox, Edge) and p
 - freecodecamp : [https://www.freecodecamp.org/learn/2022/responsive-web-design/]
 
 
+
 ### Acknowledgements
 - I drew design inspiration from a variety of retro-themed websites and tutorials, which helped me craft the overall aesthetic for this project. My interest for the music beats from the early 2000s inspired me to create something that captures the nostalgic vibe of that time. I decided to base my project on a legitimate band, *The Smiths*, although they have already broken up. Through this project, I'm reimagining and recreating something that brings their legacy back to life in a modern, retro-inspired way.
 
