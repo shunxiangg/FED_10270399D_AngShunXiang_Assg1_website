@@ -17,18 +17,7 @@ document.addEventListener('click', (event) => {
     }
 });
 
-// // Filter photos by category
-// function filterPhotos() {
-//     const filterValue = document.getElementById('photo-filter').value;
-//     const photos = document.querySelectorAll('#gallery img');
-    
-//     photos.forEach(photo => {
-//         photo.classList.remove('active');
-//         if (filterValue === 'all' || photo.classList.contains(filterValue)) {
-//             photo.classList.add('active');
-//         }
-//     });
-// }
+
 
 
 
@@ -43,58 +32,109 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 
 
-// // Function to open modal with product details
-// function showModal(title, imgSrc, description) {
-//     document.getElementById('modal-title').textContent = title;
-//     document.getElementById('modal-img').src = imgSrc;
-//     document.getElementById('modal-desc').textContent = description;
-    
-//     // Show the modal
-//     document.getElementById('myModal').style.display = 'block';
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+// function addToCart(name, price) {
+//     // Add item to cart directly from the store page
+//     let cartItemsList = document.getElementById('cartItems');
+//     let newItem = document.createElement('li');
+//     newItem.innerText = `${name} - $${price.toFixed(2)}`;
+//     cartItemsList.appendChild(newItem);
+
+//     cartTotal += price;
+//     document.getElementById('cartTotal').innerText = 'Total: $' + cartTotal.toFixed(2);
 // }
 
-// // Function to close the modal
-// function closeModal() {
-//     document.getElementById('myModal').style.display = 'none';
-// }
 
-// // Close modal when clicking outside the modal content
-// window.onclick = function(event) {
-//     const modal = document.getElementById('myModal');
-//     if (event.target == modal) {
-//         modal.style.display = 'none';
-//     }
-// }
-
-
-
-
-// let modalItemName = '';
-// let modalItemPrice = 0;
-// let cartTotal = 0;
-
-// function showModal(title, imageSrc, shortDescription, longDescription, price) {
+// function showModal(title, imageSrc, shortDescription, longDescription) {
 //     document.getElementById('modalTitle').innerText = title;
 //     document.getElementById('modalImage').src = imageSrc;
 //     document.getElementById('modalShortDescription').innerText = shortDescription;
 //     document.getElementById('modalLongDescription').innerText = longDescription;
 
-//     modalItemName = title;
-//     modalItemPrice = price;
-
-//     document.getElementById('productModal').style.display = 'block';
+//     const modal = document.getElementById('productModal');
+//     modal.style.display = 'block';
 // }
 
 // function closeModal() {
-//     document.getElementById('productModal').style.display = 'none';
+//     const modal = document.getElementById('productModal');
+//     modal.style.display = 'none';
 // }
+let cartTotal = 0;
+let allItems = [
+    {
+        name: "Retro Steampunk Table Lamp",
+        price: 140,
+        description: "Vintage industrial metal water pipe lamp",
+        img: "imgs_folder/table_lamp.webp"
+    },
+    {
+        name: "Vintage Indian Ceramic Pickle Jar",
+        price: 92,
+        description: "Hand-painted orange and green jar",
+        img: "imgs_folder/pickle_jar.webp"
+    },
+    {
+        name: "Vintage Mini Tea Set Porcelain",
+        price: 23,
+        description: "13-piece floral porcelain set",
+        img: "imgs_folder/mini_tea_set.webp"
+    },
+    {
+        name: "Infityle Classic Retro Game Console",
+        price: 32,
+        description: "620 games, 8-bit video console",
+        img: "imgs_folder/retro_game_console.webp"
+    },
+    {
+        name: "Mini Classic Game Machine",
+        price: 60,
+        description: "26 games with keychain console",
+        img: "imgs_folder/mini_game_machine.webp"
+    },
+    {
+        name: "In the Night Garden Talking Makka Pakka",
+        price: 66,
+        description: "Soft and cuddly Makka Pakka plush",
+        img: "imgs_folder/makabaka.webp"
+    },
+    {
+        name: "Gramophone Wooden Working Antique Audio Wind-up Record Player",
+        price: 153,
+        description: "Wooden gramophone with wind-up mechanism",
+        img: "imgs_folder/record_player.webp"
+    },
+    {
+        name: "Vintage Metal Tin Canister With Handle Strawberries Design",
+        price: 25,
+        description: "Vintage tin canister with strawberry design",
+        img: "imgs_folder/tin-canister.webp"
+    },
+    {
+        name: "Vintage RETRO-1532 Guitar",
+        price: 260,
+        description: "Rare vintage guitar with rich tone",
+        img: "imgs_folder/store_guitar.jpg"
+    },
+    {
+        name: "Vintage Band T-Shirt",
+        price: 30,
+        description: "Stylish band logo design shirt",
+        img: "imgs_folder/store-tshirt-white.webp"
+    }
+];
 
-
-
-
-///////////////////////////////////////////////
-///////////////////////////////////////////////
-///////////////////////////////////////////////
 function addToCart(name, price) {
     // Add item to cart directly from the store page
     let cartItemsList = document.getElementById('cartItems');
@@ -105,7 +145,6 @@ function addToCart(name, price) {
     cartTotal += price;
     document.getElementById('cartTotal').innerText = 'Total: $' + cartTotal.toFixed(2);
 }
-
 
 function showModal(title, imageSrc, shortDescription, longDescription) {
     document.getElementById('modalTitle').innerText = title;
