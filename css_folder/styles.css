@@ -832,6 +832,21 @@ form button:active,
 
 
 
+/* Flexbox container for price and button */
+.price-button-container {
+    display: flex;
+    align-items: center; /* Align price and button vertically */
+    justify-content: space-between; /* Optional: adds space between elements */
+}
+
+/* Price styles */
+.product-price {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8rem; /* Adjust for readability */
+    color: #333;
+    font-weight: bold;
+    padding-left: 7%;
+}
 
 
 

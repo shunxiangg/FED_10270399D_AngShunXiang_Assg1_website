@@ -17,28 +17,18 @@ document.addEventListener('click', (event) => {
     }
 });
 
-
-
-
-
-
-
-
-
-// Filter photos by category
-function filterPhotos() {
-    const filterValue = document.getElementById('photo-filter').value;
-    const photos = document.querySelectorAll('#gallery img');
+// // Filter photos by category
+// function filterPhotos() {
+//     const filterValue = document.getElementById('photo-filter').value;
+//     const photos = document.querySelectorAll('#gallery img');
     
-    photos.forEach(photo => {
-        photo.classList.remove('active');
-        if (filterValue === 'all' || photo.classList.contains(filterValue)) {
-            photo.classList.add('active');
-        }
-    });
-}
-
-
+//     photos.forEach(photo => {
+//         photo.classList.remove('active');
+//         if (filterValue === 'all' || photo.classList.contains(filterValue)) {
+//             photo.classList.add('active');
+//         }
+//     });
+// }
 
 
 
@@ -126,18 +116,6 @@ function addToCart(name, price) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 function showModal(title, imageSrc, shortDescription, longDescription) {
     document.getElementById('modalTitle').innerText = title;
     document.getElementById('modalImage').src = imageSrc;
@@ -153,19 +131,24 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
+function filterByPrice() {
+    // Get the selected price range from the dropdown
+    let priceRange = document.getElementById('price-range').value;
+    let [minPrice, maxPrice] = priceRange.split('-').map(Number);
 
+    // Get all product items
+    let items = document.querySelectorAll('.store-items .item');
+    
+    // Loop through each item and check its price
+    items.forEach(item => {
+        let priceText = item.querySelector('p').innerText;
+        let price = parseFloat(priceText.split('-')[1].trim().replace('$', ''));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // Show or hide the item based on the selected price range
+        if (price >= minPrice && price <= maxPrice) {
+            item.style.display = 'block'; // Show item
+        } else {
+            item.style.display = 'none'; // Hide item
+        }
+    });
+}
