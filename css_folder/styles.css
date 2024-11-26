@@ -264,14 +264,12 @@ form textarea {
     box-sizing: border-box;
 }
 
-
     #thankYouMessage {
         margin-top: 20px;
         font-size: 1.2em;
         color: rgb(9, 185, 9);
         text-align: center;
     }
-
 
 
 /* Responsive Navbar Styles */
@@ -325,7 +323,6 @@ form textarea {
     h2 {
         font-size: 1.4em; 
     }
-   
 }
 
 
@@ -334,7 +331,10 @@ form textarea {
 
 
 /* Store Page Styles */
-/* Container for each item */
+
+
+
+
 .store-items {
     
     display: grid;
@@ -381,7 +381,6 @@ form textarea {
 
 /* Retro Items Modal style */
 .modal {
-    
     display: none; /* not shown at first */
     position: fixed;
     z-index: 100;
@@ -391,7 +390,6 @@ form textarea {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7);
-    
 }
 
 .modal-content {
@@ -455,7 +453,6 @@ form button,
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; /* when refresh page the button will go into position */
     width: 150px; 
     height: 50px; 
-        
 }
 
 /* Button hover effect */
@@ -742,6 +739,18 @@ form button:active,
     cursor: pointer;
 }
 
+.filter-dropdown {
+    margin-right: 20px; /* Adds space between the dropdown and button */
+}
+
+.button-link {
+    padding: 8px 16px; /* Optional: Adjust button padding */
+}
+
+#store-filter-dropdown{
+    margin-right: 100px;
+}
+
 .filter-dropdown:hover {
     background-color: #d1d0c2; /* Slight color change on hover */
 }
@@ -847,6 +856,5 @@ form button:active,
     font-weight: bold;
     padding-left: 7%;
 }
-
 
 

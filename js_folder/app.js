@@ -130,15 +130,24 @@ function closeModal() {
     const modal = document.getElementById('productModal');
     modal.style.display = 'none';
 }
-
 function filterByPrice() {
     // Get the selected price range from the dropdown
     let priceRange = document.getElementById('price-range').value;
-    let [minPrice, maxPrice] = priceRange.split('-').map(Number);
 
     // Get all product items
     let items = document.querySelectorAll('.store-items .item');
     
+    // If 'Display All' is selected, show all items
+    if (priceRange === 'all') {
+        items.forEach(item => {
+            item.style.display = 'block'; // Show all items
+        });
+        return; // Exit the function as we don't need to filter further
+    }
+    
+    // Otherwise, split the price range and convert to numbers
+    let [minPrice, maxPrice] = priceRange.split('-').map(Number);
+
     // Loop through each item and check its price
     items.forEach(item => {
         // Find the price of the product inside the item
