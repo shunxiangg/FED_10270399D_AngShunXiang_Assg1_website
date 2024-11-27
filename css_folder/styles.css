@@ -896,7 +896,11 @@ form button:active,
 
 
 
-
+/* cart */
+#cart-section{
+    background-color: #fce38a;
+    padding: 5%;
+}
 
 
 
