@@ -1,6 +1,6 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-// Function to add an item to the cart
+// Function to add an item to the cart or increase its quantity
 function addToCart(itemName, itemPrice) {
     const item = cart.find(cartItem => cartItem.name === itemName);
     if (item) {
@@ -12,9 +12,15 @@ function addToCart(itemName, itemPrice) {
     updateCartDisplay();
 }
 
-// Function to remove an item from the cart
+// Function to decrease quantity or remove an item from the cart
 function removeFromCart(itemName) {
-    cart = cart.filter(cartItem => cartItem.name !== itemName);
+    const item = cart.find(cartItem => cartItem.name === itemName);
+    if (item) {
+        item.quantity--;
+        if (item.quantity === 0) {
+            cart = cart.filter(cartItem => cartItem.name !== itemName);
+        }
+    }
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCartDisplay();
 }
@@ -40,10 +46,17 @@ function updateCartDisplay() {
         const listItem = document.createElement('li');
         listItem.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
         
+        // Add button
+        const addButton = document.createElement('button');
+        addButton.textContent = '+';
+        addButton.onclick = () => addToCart(item.name, item.price);
+
+        // Remove button
         const removeButton = document.createElement('button');
-        removeButton.textContent = 'Remove';
+        removeButton.textContent = '-';
         removeButton.onclick = () => removeFromCart(item.name);
 
+        listItem.appendChild(addButton);
         listItem.appendChild(removeButton);
         cartItemsContainer.appendChild(listItem);
     });
@@ -93,5 +106,3 @@ window.onclick = (event) => {
         hideModal();
     }
 };
-
-
