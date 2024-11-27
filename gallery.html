@@ -53,23 +53,28 @@
     <!-- Filter  -->
     <section id="photos" class="dash">
         <h2 class="page_title">Gallery</h2>
-        <label for="photo-filter">Filter by Category:</label>
-        <select id="photo-filter" onchange="filterPhotos()">
-            <option value="all">All</option>
-            <option value="live">Live Performances</option>
-            <option value="studio">Studio Sessions</option>
-        </select>
-        <div id="gallery">
-            <img src="live1.jpg" alt="Live Performance 1" class="live">
-            <img src="live2.jpg" alt="Live Performance 2" class="live">
-            <img src="studio1.jpg" alt="Studio Session 1" class="studio">
-            <img src="studio2.jpg" alt="Studio Session 2" class="studio">
-        </div>
-    </section>
+      
+
 
 
     
+    <div id="gallery">
+        <img src="imgs_folder/img_Daisy Jones & The Six.jpg" alt="Live Performance 1" class="live" onclick="playMusic('song1.mp3')">
+        <img src="imgs_folder/img_Metal Poster Retro Sound 4.jpg" alt="Live Performance 2" class="live" onclick="playMusic('song2.mp3')">
+        <img src="imgs_folder/img_Old Songs.jpg" alt="Studio Session 1" class="studio" onclick="playMusic('song3.mp3')">
+        <img src="imgs_folder/img_random.jpg" alt="Studio Session 2" class="studio" onclick="playMusic('song4.mp3')">
+    </div>
+</section>
 
+    <audio id="musicPlayer"></audio>
+    <script>
+        // Function to play the corresponding music
+        function playMusic(song) {
+            const musicPlayer = document.getElementById('musicPlayer');
+            musicPlayer.src = `audio_folder/${song}`; // Path to the audio file
+            musicPlayer.play();
+        }
+    </script>
 
 
 
@@ -85,11 +90,54 @@
     </footer>
 
     <!-- audio -->
-    <audio id="background-music" autoplay loop>
+    <!-- <audio id="background-music" autoplay loop>
         <source src="videoAudio_folder/80x27s-old-school-rock-248901.mp4" type="audio/mpeg">
-    </audio>
+    </audio> -->
 
+
+
+    <style>
+        #gallery {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap if they don't fit in one row */
+            justify-content: space-around; /* Distribute space evenly */
+        }
+
+        #gallery img {
+            width: 200px;  /* Set a fixed width */
+            height: 200px; /* Set a fixed height */
+            margin: 10px; /* Add some space between images */
+            object-fit: cover; /* Ensure images cover the box while maintaining aspect ratio */
+            border-radius: 10px; /* Optional: add rounded corners */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for Spotify-like look */
+            cursor: pointer; /* Change cursor to pointer to indicate clickability */
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Add a hover effect to give the images a "lift" when hovered */
+        #gallery img:hover {
+            transform: translateY(-10px); /* Move the image slightly up */
+        }
+
+        /* Optional: Center the audio player */
+        #musicPlayer {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
         <script src="js_folder/app.js"></script>
+        <script>
+            function playMusic(audioSrc) {
+                var audioPlayer = document.getElementById('musicPlayer');
+                var audioSource = document.getElementById('audioSource');
+    
+                // Set the new audio source and play it
+                audioSource.src = audioSrc;
+                audioPlayer.style.display = 'block'; // Show the audio controls when playing
+                audioPlayer.load(); // Load the new audio file
+                audioPlayer.play(); // Play the audio
+            }
+        </script>
     </body>
     </html>
     
