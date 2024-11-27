@@ -53,30 +53,37 @@
     <!-- Filter  -->
     <section id="photos" class="dash">
         <h2 class="page_title">Gallery</h2>
-      
-
-
-
-    
-    <div id="gallery">
-        <img src="imgs_folder/img_Daisy Jones & The Six.jpg" alt="Live Performance 1" class="live" onclick="playMusic('somg_retrosoul.mp4')">
-        <img src="imgs_folder/img_Metal Poster Retro Sound 4.jpg" alt="Live Performance 2" class="live" onclick="playMusic('song2.mp3')">
-        <img src="imgs_folder/img_Old Songs.jpg" alt="Studio Session 1" class="studio" onclick="playMusic('song3.mp3')">
-        <img src="imgs_folder/img_random.jpg" alt="Studio Session 2" class="studio" onclick="playMusic('song4.mp3')">
-    </div>
-</section>
-
-    <audio id="musicPlayer"></audio>
+            <div id="gallery">
+                <img class="playImage" src="imgs_folder/img_Daisy Jones & The Six.jpg" style="cursor:pointer;" width="300px">
+                <audio class="myAudio" src="videoAudio_folder/somg_retrosoul.mp4" style="display:none;"></audio>
+            
+                <img class="playImage" src="imgs_folder/img_Metal Poster Retro Sound 4.jpg" style="cursor:pointer;" width="300px">
+                <audio class="myAudio" src="videoAudio_folder/song_badds.mp4" style="display:none;"></audio>
+            
+                <img class="playImage" src="imgs_folder/img_Old Songs.jpg" style="cursor:pointer;" width="300px">
+                <audio class="myAudio" src="videoAudio_folder/song_downtown.mp4" style="display:none;"></audio>
+            
+                <img class="playImage" src="imgs_folder/img_random.jpg" style="cursor:pointer;" width="300px">
+                <audio class="myAudio" src="videoAudio_folder/song_thejassz.mp4" style="display:none;"></audio>
+            </div>
+    </section>
     <script>
-        // Function to play the corresponding music
-        function playMusic(song) {
-            const musicPlayer = document.getElementById('musicPlayer');
-            musicPlayer.src = `videoAudio_folder/${song}`; // Path to the audio file
-            musicPlayer.play();
-        }
+        const images = document.querySelectorAll('.playImage');
+        const audios = document.querySelectorAll('.myAudio');
+        images.forEach((image, index) => {
+            image.addEventListener('click', () => {
+                
+                const audio = audios[index];            // Get the corresponding audio by matching the index of the image
+                if (audio.paused) {
+                    audios.forEach(a => a.pause());     // Pause all other audios before playing the one that you clicked
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        });
     </script>
-
-
+    
 
 
     <button class="button-container" id="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
@@ -119,6 +126,32 @@
             transform: translateY(-10px); /* Move the image slightly up */
         }
 
+        #gallery .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        /* When hovering over the image, the overlay appears */
+        #gallery img:hover + .overlay {
+            opacity: 1;
+        }
+
+        /* Ensure the "Click Me" overlay doesn't block clicks on the image */
+        #gallery .overlay:hover {
+            pointer-events: none;
+        }
         /* Optional: Center the audio player */
         #musicPlayer {
             display: block;
