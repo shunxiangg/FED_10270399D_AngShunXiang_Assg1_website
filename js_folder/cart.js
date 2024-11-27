@@ -79,7 +79,12 @@ document.getElementById('proceedCheckout').onclick = () => {
     showModal();
 };
 
-
+// Handle modal close and confirm button
+document.querySelector('.close-btn').onclick = hideModal;
+document.getElementById('confirmCheckout').onclick = () => {
+    clearCart();
+    hideModal();
+};
 
 // Close modal when clicking outside of it
 window.onclick = (event) => {
