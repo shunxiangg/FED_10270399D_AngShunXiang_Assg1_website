@@ -191,14 +191,14 @@
     <!-- Cart Section -->
     <section class="shopping_cart">
         <h2>Shopping Cart</h2>
-            <ul id="cartItems"></ul>
-            <div id="cartTotal">Total: $0.00</div>
+        <ul id="cartItems"></ul>
+        <div id="cartTotal">Total: $0.00</div>
+        <button class="button-container" onclick="clearCart()">Clear Cart</button>
     </section>
 
-    <button class="button-container" onclick="window.location.href='cart.html'">View Cart</button>
-  
-
-
+    
+        <button class="button-container" onclick="window.location.href='cart.html'">View Cart</button>
+      
 
     <!-- Modal Structure -->
     <div id="productModal" class="modal">
@@ -209,7 +209,7 @@
             <strong><p id="modalShortDescription"></p></strong>
             <div id="modalLongDescription"></div>
             <br>
-            <button id="modalBuyButton" class="button-container" onclick="addToCart()">Buy Now</button>
+            <button id="modalBuyButton" class="button-container" onclick="addToCart(modalItemName, modalItemPrice)">Buy Now</button>
         </div>
     </div>
     
@@ -240,13 +240,7 @@
     
 
     <script src="js_folder/app.js"></script>
-    <script>
-        
-     
- 
-
-
-    </script>
+    <script src="js_folder/cart.js"></script>
     
     <style>
   

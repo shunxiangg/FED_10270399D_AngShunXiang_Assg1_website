@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="css_folder/styles.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -14,6 +16,7 @@
                     <img src="imgs_folder/smiths-logo.png" alt="The Fictional Band">
                 </a>
             </div>
+
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,27 +31,24 @@
 
     <button class="button-container" onclick="window.location.href='store.html'">Return</button>
   
-    <section id="checkout">
-        <h1>Checkout</h1>
-
-        <h2>Your Cart</h2>
-        <ul id="cartItems"></ul>
-
+    <section id="cart-section">
+        <h1>Your Cart</h1>
+        <ul id="cartItems">
+            <!-- Items will be dynamically added here -->
+        </ul>
         <div id="cartTotal">Total: $0.00</div>
-
-        <button id="checkoutButton">Proceed to Checkout</button>
+        <div>
+        <button class="button-container" onclick="clearCart()">Clear</button>
+        
+        <button class="button-container" id="proceedCheckout">Checkout</button>
+    </div>
     </section>
 
     <footer>
         <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
     </footer>
 
-
-
-    <script src="js_folder/app.js"></script>
-
-    <script>
- 
-    </script>
+    <script src="js_folder/cart.js"></script>
 </body>
+
 </html>

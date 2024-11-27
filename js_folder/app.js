@@ -202,3 +202,18 @@ function filterByPrice() {
 
 
 
+//adding items to cart
+// app.js
+
+function addToCart(itemName, itemPrice) {
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    
+    // Add the new item to the cart
+    cartItems.push({ name: itemName, price: itemPrice });
+    
+    // Save the updated cart back to localStorage
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    
+    // Optionally, show a confirmation to the user
+    alert(`${itemName} has been added to your cart!`);
+}
