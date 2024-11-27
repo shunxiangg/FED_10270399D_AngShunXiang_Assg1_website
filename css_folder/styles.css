@@ -175,6 +175,7 @@ footer p {
     box-shadow: none;
 }
 
+
 /* Keyframes for spinning effect */
 @keyframes spin {
     from {
@@ -184,6 +185,29 @@ footer p {
         transform: rotate(360deg); /* Rotate to 360 degrees */
     }
 }
+
+@media only screen and (max-width: 600px) {
+    /* Spinning image size for mobile */
+    #index_spinningimages {
+        height: 200px; /* Reduce the size for mobile */
+    }
+
+    /* Flexbox for section content */
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the content horizontally */
+        justify-content: center; /* Center the content vertically */
+        text-align: center; /* Center the text */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    /* Adjust the title font size for mobile */
+    .page_title {
+        font-size: 24px; /* Reduce font size for mobile */
+    }
+}
+
 
 
 .home-intro {

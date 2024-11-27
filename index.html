@@ -43,12 +43,13 @@
     
     <section>
         <div>
-            <h1 class="page_title" id="typing-text">Welcome to The Fictional Band</h1>
+            <h1 class="page_title" id="typing-text">Welcome Smithers</h1>
         </div>
     </section>
     
-    <img id="index_spinningimages" src="imgs_folder/spinningdisk_the _smiths.webp" alt="The Fictional Band">
-
+    
+        <img id="index_spinningimages" src="imgs_folder/spinningdisk_the _smiths.webp" alt="The Fictional Band">
+        
 
 
     <div class="spacing">
@@ -99,7 +100,6 @@
             let currentText = '';
             let isTyping = true;
             let textIndex = 0;
-            
             function typeAndDelete() {
                 if (isTyping) {
                     // Add one character at a time
@@ -146,11 +146,11 @@
         
         /* typing and deleting effect */
         .typing {
-            animation: typing 2s steps(30) 2s forwards;
+            animation: typing 3s steps(30) 2s forwards;
         }
 
         .deleting {
-            animation: deleting 16s steps(100) 2s forwards;
+            animation: deleting 16s steps(30) 10s forwards;
         }
 
         /* Typing animation styles */
@@ -167,7 +167,7 @@
         /* Typing animation */
         @keyframes typing {
             from {
-                width: -1;
+                width: 0;
             }
             to {
                 width: 100%;
@@ -180,7 +180,7 @@
                 width: 100%;
             }
             to {
-                width: -1;
+                width: 0;
             }
         }
 

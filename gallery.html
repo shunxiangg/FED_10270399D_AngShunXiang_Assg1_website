@@ -59,7 +59,7 @@
 
     
     <div id="gallery">
-        <img src="imgs_folder/img_Daisy Jones & The Six.jpg" alt="Live Performance 1" class="live" onclick="playMusic('song1.mp3')">
+        <img src="imgs_folder/img_Daisy Jones & The Six.jpg" alt="Live Performance 1" class="live" onclick="playMusic('somg_retrosoul.mp4')">
         <img src="imgs_folder/img_Metal Poster Retro Sound 4.jpg" alt="Live Performance 2" class="live" onclick="playMusic('song2.mp3')">
         <img src="imgs_folder/img_Old Songs.jpg" alt="Studio Session 1" class="studio" onclick="playMusic('song3.mp3')">
         <img src="imgs_folder/img_random.jpg" alt="Studio Session 2" class="studio" onclick="playMusic('song4.mp3')">
@@ -71,7 +71,7 @@
         // Function to play the corresponding music
         function playMusic(song) {
             const musicPlayer = document.getElementById('musicPlayer');
-            musicPlayer.src = `audio_folder/${song}`; // Path to the audio file
+            musicPlayer.src = `videoAudio_folder/${song}`; // Path to the audio file
             musicPlayer.play();
         }
     </script>
