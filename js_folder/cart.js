@@ -1,5 +1,3 @@
-// cart.js
-
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Function to add an item to the cart
@@ -53,17 +51,40 @@ function updateCartDisplay() {
     cartTotalDisplay.textContent = `Total: $${total.toFixed(2)}`;
 }
 
+// Show the checkout modal
+function showModal() {
+    const modal = document.getElementById('checkoutModal');
+    modal.style.display = 'block';
+}
+
+// Hide the checkout modal
+function hideModal() {
+    const modal = document.getElementById('checkoutModal');
+    modal.style.display = 'none';
+}
+
 // Update cart display on page load
 window.onload = () => {
     updateCartDisplay();
 };
 
-// Proceed to checkout (basic functionality)
+// Proceed to checkout and show modal
 document.getElementById('proceedCheckout').onclick = () => {
     if (cart.length === 0) {
         alert("Your cart is empty!");
         return;
     }
-    alert("Proceeding to checkout...");
-    // Add further checkout logic here (e.g., redirect to payment gateway)
+
+    // Show modal for checkout confirmation
+    showModal();
+};
+
+
+
+// Close modal when clicking outside of it
+window.onclick = (event) => {
+    const modal = document.getElementById('checkoutModal');
+    if (event.target === modal) {
+        hideModal();
+    }
 };
