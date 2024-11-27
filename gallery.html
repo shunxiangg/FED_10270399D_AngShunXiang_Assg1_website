@@ -54,17 +54,26 @@
     <section id="photos" class="dash">
         <h2 class="page_title">Gallery</h2>
             <div id="gallery">
-                <img class="playImage" src="imgs_folder/img_Daisy Jones & The Six.jpg" style="cursor:pointer;" width="300px">
-                <audio class="myAudio" src="videoAudio_folder/somg_retrosoul.mp4" style="display:none;"></audio>
-            
-                <img class="playImage" src="imgs_folder/img_Metal Poster Retro Sound 4.jpg" style="cursor:pointer;" width="300px">
-                <audio class="myAudio" src="videoAudio_folder/song_badds.mp4" style="display:none;"></audio>
-            
-                <img class="playImage" src="imgs_folder/img_Old Songs.jpg" style="cursor:pointer;" width="300px">
-                <audio class="myAudio" src="videoAudio_folder/song_downtown.mp4" style="display:none;"></audio>
-            
-                <img class="playImage" src="imgs_folder/img_random.jpg" style="cursor:pointer;" width="300px">
-                <audio class="myAudio" src="videoAudio_folder/song_thejassz.mp4" style="display:none;"></audio>
+                <div style="position: relative; display: inline-block;">
+                    <img class="playImage" src="imgs_folder/img_Daisy Jones & The Six.jpg" style="cursor:pointer;" width="300px">
+                    <audio class="myAudio" src="videoAudio_folder/somg_retrosoul.mp4" style="display:none;"></audio>
+                    <div class="overlay">Click Me</div>
+                </div>
+                <div style="position: relative; display: inline-block;">
+                    <img class="playImage" src="imgs_folder/img_Metal Poster Retro Sound 4.jpg" style="cursor:pointer;" width="300px">
+                    <audio class="myAudio" src="videoAudio_folder/song_badds.mp4" style="display:none;"></audio>
+                    <div class="overlay">Click Me</div>
+                </div>
+                <div style="position: relative; display: inline-block;">
+                    <img class="playImage" src="imgs_folder/img_Old Songs.jpg" style="cursor:pointer;" width="300px">
+                    <audio class="myAudio" src="videoAudio_folder/song_downtown.mp4" style="display:none;"></audio>
+                    <div class="overlay">Click Me</div>
+                </div>
+                <div style="position: relative; display: inline-block;">
+                    <img class="playImage" src="imgs_folder/img_random.jpg" style="cursor:pointer;" width="300px">
+                    <audio class="myAudio" src="videoAudio_folder/song_thejassz.mp4" style="display:none;"></audio>
+                    <div class="overlay">Click Me</div>
+                </div>
             </div>
     </section>
     <script>
@@ -125,38 +134,29 @@
         #gallery img:hover {
             transform: translateY(-10px); /* Move the image slightly up */
         }
-
-        #gallery .overlay {
+        .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
             font-size: 24px;
-            opacity: 0;
+            opacity: 0; /* Initially hidden */
             transition: opacity 0.3s ease;
             pointer-events: none;
         }
 
-        /* When hovering over the image, the overlay appears */
-        #gallery img:hover + .overlay {
-            opacity: 1;
+        /* Show overlay when image is hovered */
+        #gallery div:hover .overlay {
+            opacity: 1; /* Make overlay visible */
         }
 
-        /* Ensure the "Click Me" overlay doesn't block clicks on the image */
-        #gallery .overlay:hover {
-            pointer-events: none;
-        }
-        /* Optional: Center the audio player */
-        #musicPlayer {
-            display: block;
-            margin: 20px auto;
-        }
+
     </style>
         <script src="js_folder/app.js"></script>
         <script>
