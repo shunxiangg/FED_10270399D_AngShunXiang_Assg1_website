@@ -22,10 +22,8 @@ document.addEventListener('click', (event) => {
 
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevent the form from actually submitting
-
-    // Hide the form and display the thank you message
-    document.getElementById('contactForm').style.display = 'none';
+    event.preventDefault(); // this line prevents the thankyou message from disappearing
+    document.getElementById('contactForm').style.display = 'none'; // hide the form
     document.getElementById('thankYouMessage').style.display = 'block';
 });
 

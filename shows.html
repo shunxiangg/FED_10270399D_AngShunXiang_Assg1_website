@@ -159,9 +159,9 @@
 
             <label>Age Group:</label>
             <div id="formAgeGroup_radiobuttons">
-                <input type="radio" name="ageGroup"> <label>Elderly</label>
-                <input type="radio" name="ageGroup"> <label>Adult</label>
-                <input type="radio" name="ageGroup"> <label>Teen</label>
+                <input type="radio" name="ageGroup" required> <label>Elderly</label>
+                <input type="radio" name="ageGroup" required> <label>Adult</label>
+                <input type="radio" name="ageGroup" required> <label>Teen</label>
             </div>
             
         
@@ -169,7 +169,7 @@
             <input type="email" id="email" required>   
 
             <label>Select Show:</label>
-            <select multiple>
+            <select multiple required>
                 <option value="How Soon is Now">How Soon is Now - October 2027</option>
                 <option value="Rock at the Park">Rock at the Park - 15th November 2027</option>
                 <option value="Young at Beachfront">Young at Beachfront - 1st December 2027</option>
@@ -190,29 +190,14 @@
         </form>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
 <button class="button-container" id="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
-      
 <section></section>
-
-
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
         <p>Follow us on <a href="https://www.facebook.com/TheSmiths/" target="_blank">Facebook</a>, <a href="https://www.instagram.com/thesmithsofficial/?hl=en" target="_blank">Instagram</a>, <a href="http://www.officialsmiths.co.uk/tqid/" target="_blank">OfficalSmiths</a> and <a href="https://lnk.to/TheSmithsHits" target="_blank">Music</a></p>
     </footer>
-
 
     <!-- audio -->
     <audio id="background-music" autoplay loop>
@@ -249,147 +234,175 @@
         }
     }
 
+    
+
 </script>
 
 <style>
-.show-past {
-    margin: 20px auto;
-   
-    padding: 12px 25px;
-    background-color: #EE66A6; /* buy now buttion colour */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.2em;
-    font-family: 'Courier New', Courier, monospace; /* Retro font ?? i guess */
-    /* 3D effect */
-    box-shadow: 0 6px #D91656; /* Shadow for 3D effect with darker shade */
-    height: 50px; /* Fixed height */
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    overflow: auto;
-    padding-top: 20px;
-}
-
-.modal-content {
-    background-color: #f4e1c1; /* Light cream background for a vintage feel */
-    margin: 5% auto;
-    padding: 20px;
-    border: 6px solid #f3e5cd; /* Dark border for contrast */
-    width: 50%;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Close button */
-
-
-.close:hover,
-.close:focus {
-    color: #333; /* Vintage red hover effect */
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-label {
-    font-family: 'Courier New', Courier, monospace; /* Old-school typewriter font */
-    font-size: 16px;
-    color: #333;
-}
-
-input, select, button {
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    border: 2px solid #929292; /* Lighter border for input fields */
-    border-radius: 5px;
+    .show-past {
+        margin: 20px auto;
     
-}
-
-input{
-    width: 100%;
-    max-width: 100%;
-}
-
-select {
-    width: 100%;
-    max-width: 100%;
-    background-color: #fff9db; 
-}
-
-
-button:hover {
-    background-color: #d9534f; /* Vintage red on hover */
-}
-
-/* Multi-Select Styling */
-select[multiple] {
-    height: 100%;
-    width: 100%;
-    
-}
-
-
-
-.modal-content {
-    width: 100%;
-}
-
-/* Submit Button Adjustment */
-button[type="submit"] {
-    align-self: center;
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #d9534f;
-    border-radius: 5px;
-}
-
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    /* Modal Content Adjustments for Smaller Screens */
-    .modal-content {
-        width: 90%; /* Make modal take up most of the screen */
-        margin: 10% auto; /* Adjust the margin for better centering */
-        padding: 15px; /* Add some space inside the modal */
+        padding: 12px 25px;
+        background-color: #EE66A6; /* buy now buttion colour */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.2em;
+        font-family: 'Courier New', Courier, monospace; /* Retro font ?? i guess */
+        /* 3D effect */
+        box-shadow: 0 6px #D91656; /* Shadow for 3D effect with darker shade */
+        height: 50px; /* Fixed height */
     }
 
-    /* Form adjustments for smaller screens */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        overflow: auto;
+        padding-top: 20px;
+    }
+
+    .modal-content {
+        background-color: #f4e1c1; /* Light cream background for a vintage feel */
+        margin: 5% auto;
+        padding: 20px;
+        border: 6px solid #f3e5cd; /* Dark border for contrast */
+        width: 50%;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Close button */
+
+
+    .close:hover,
+    .close:focus {
+        color: #333; /* Vintage red hover effect */
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Form Styling */
     form {
         display: flex;
         flex-direction: column;
-        gap: 10px; /* Reduce gap between elements */
-        padding: 0 20px; /* Add some padding on sides */
+        gap: 15px;
     }
-}
+
+    label {
+        font-family: 'Courier New', Courier, monospace; /* Old-school typewriter font */
+        font-size: 16px;
+        color: #333;
+    }
+
+    input, select, button {
+        padding: 10px;
+        font-size: 16px;
+        font-family: 'Courier New', Courier, monospace;
+        border: 2px solid #929292; /* Lighter border for input fields */
+        border-radius: 5px;
+        
+    }
+
+    input{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    select {
+        width: 100%;
+        max-width: 100%;
+        background-color: #fff9db; 
+    }
 
 
-#formAgeGroup_radiobuttons {
-    display: flex;
-    align-items: center;
-}
-#formAgeGroup_radiobuttons input[type="radio"] {
-    transform: scale(2.2);
-}
+    button:hover {
+        background-color: #d9534f; /* Vintage red on hover */
+    }
 
+    /* Multi-Select Styling */
+    select[multiple] {
+        height: 100%;
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    /* Submit Button Adjustment */
+    button[type="submit"] {
+        align-self: center;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #d9534f;
+        border-radius: 5px;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        /* Modal Content Adjustments for Smaller Screens */
+        .modal-content {
+            width: 90%; /* Make modal take up most of the screen */
+            margin: 10% auto; /* Adjust the margin for better centering */
+            padding: 15px; /* Add some space inside the modal */
+        }
+
+        /* Form adjustments for smaller screens */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Reduce gap between elements */
+            padding: 0 20px; /* Add some padding on sides */
+        }
+    }
+
+
+    #formAgeGroup_radiobuttons {
+        display: flex;
+        align-items: center;
+    }
+    #formAgeGroup_radiobuttons input[type="radio"] {
+        transform: scale(2.2);
+    }
+
+    /* Style for required invalid fields */
+    input:invalid, select:invalid {
+        border: 2px solid #d9534f; /* Red border for invalid fields */
+        background-color: #f8d7da; /* Light red background for invalid fields */
+    }
+
+    input:required:invalid, select:required:invalid {
+        border: 2px solid #d9534f; /* Red border for invalid fields */
+        background-color: #f8d7da; /* Light red background */
+        box-shadow: 0 0 5px rgba(217, 83, 79, 0.5); /* Light shadow to highlight */
+    }
+
+    /* Style for the form when there are invalid fields */
+    form input:focus:invalid, form select:focus:invalid {
+        outline: none;
+        box-shadow: 0 0 10px rgba(217, 83, 79, 0.7); /* Glow effect when focused */
+    }
+
+    /* Optional: Custom message for invalid input */
+    input:required:invalid:focus, select:required:invalid:focus {
+        border-color: #d9534f;
+        background-color: #f8d7da;
+    }
+
+    input:required:invalid::after {
+        content: "Please fill out this field"; /* Custom message */
+        color: #d9534f;
+        font-size: 12px;
+        font-style: italic;
+    }
 </style>
 </body>
 
