@@ -362,7 +362,6 @@ form textarea {
 
 .store-items .item:hover {
     background-color: #b298ab; /* Light purple on hover */
-
 }
 
 
@@ -579,13 +578,11 @@ form button:active,
 .show-item {
     display: flex;
     justify-content: space-between; /* This aligns the image and the content side by side */
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding: 40px;
     background-color: rgba(186, 187, 241, 0.855); /* Light background for better text readability */
     border-radius: 10px;
     flex-wrap: wrap;
-    padding-bottom: 70px;
-    
 }
 
 
@@ -603,8 +600,17 @@ form button:active,
     width: 40%; /* Adjust as needed */
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+
+/* Hover effect: move the image up */
+.show-image:hover {
+    transform: translateY(-15px); /* Moves the image 10px upwards */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Optional: enhance shadow on hover */
+}
+
 
 /* Styling for the show details */
 .show-details {
@@ -646,16 +652,13 @@ form button:active,
     box-shadow: 0 6px #8b4513; /* Shadow for 3D effect with darker shade */
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; 
   
-    height: 50px; 
-   
+    height: 50px;  
 }
 
 .buy-ticket:hover {
     background-color: #ff6347; 
     transform: translateY(-4px); 
-    box-shadow: 0 10px #8b4513; 
-    
-
+    box-shadow: 0 10px #8b4513;
 }
 
 
@@ -688,12 +691,12 @@ form button:active,
     .show-item {
         flex-direction: column; 
         text-align: center;
-        padding: 40px;
+        padding: 25px;
     }
 
     .show-image {
         width: 100%; 
-        margin: 0 auto 20px auto; 
+        margin: 0 auto 2px auto; 
         height: auto; 
     }
 
@@ -703,16 +706,16 @@ form button:active,
     }
 
     .show-title {
-        font-size: 34px; 
+        font-size: 24px; 
     }
 
     .show-description {
-        font-size: 14px; 
+        font-size: 13px; 
     }
 
     .buy-ticket {
         font-size: 1em; 
-        height: 45px; 
+        height: 40px; 
     }
 }
 
@@ -969,4 +972,3 @@ form button:active,
 
 
 
-    
