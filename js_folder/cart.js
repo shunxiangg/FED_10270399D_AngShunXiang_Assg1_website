@@ -80,7 +80,7 @@ document.getElementById('proceedCheckout').onclick = () => {
 };
 
 // Handle modal close and confirm button
-document.querySelector('.close-btn').onclick = hideModal;
+document.querySelector('.close').onclick = hideModal;
 document.getElementById('confirmCheckout').onclick = () => {
     clearCart();
     hideModal();
@@ -93,3 +93,5 @@ window.onclick = (event) => {
         hideModal();
     }
 };
+
+

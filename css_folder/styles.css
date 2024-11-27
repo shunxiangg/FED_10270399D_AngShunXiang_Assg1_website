@@ -537,9 +537,32 @@ form button:active,
 }
 
 
+.blue-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #235e96; 
+    color: #d7d4ff; 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 3px 3px 0 #10375C; 
+    width: 70%;
+    margin: 8px 0;
+    border: none;
+}
 
+.blue-button:hover {
+    background-color: #10375C; 
+    color: #655aff; 
+    transform: translate(-2px, -2px); 
+    box-shadow: 5px 5px 0 #44709c;
+}
 
-
+.blue-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #10375C;
+}
 
 
 
