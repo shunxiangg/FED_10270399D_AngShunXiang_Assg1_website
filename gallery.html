@@ -26,7 +26,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="shows.html">Upcoming Shows</a></li>
-                <li><a href="music.html">Music & Videos</a></li>
+                <li><a href="music.html">Videos</a></li>
                 <li><a href="gallery.html" class="active">Gallery</a></li>
                 <li><a href="store.html">Store</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -74,6 +74,27 @@
                     <audio class="myAudio" src="videoAudio_folder/song_thejassz.mp4" style="display:none;"></audio>
                     <div class="overlay">Click Me</div>
                 </div>
+                <div style="position: relative; display: inline-block;">
+                    <img class="playImage" src="imgs_folder/song_1.jpg" style="cursor:pointer;" width="300px">
+                    <audio class="myAudio" src="videoAudio_folder/somg_retrosoul.mp4" style="display:none;"></audio>
+                    <div class="overlay">Click Me</div>
+                </div>
+                <div style="position: relative; display: inline-block;">
+                    <img class="playImage" src="imgs_folder/song_2.jpg" style="cursor:pointer;" width="300px">
+                    <audio class="myAudio" src="videoAudio_folder/song_badds.mp4" style="display:none;"></audio>
+                    <div class="overlay">Click Me</div>
+                </div>
+                <div style="position: relative; display: inline-block;">
+                    <img class="playImage" src="imgs_folder/song_3.jpg" style="cursor:pointer;" width="300px">
+                    <audio class="myAudio" src="videoAudio_folder/song_downtown.mp4" style="display:none;"></audio>
+                    <div class="overlay">Click Me</div>
+                </div>
+                <div style="position: relative; display: inline-block;">
+                    <img class="playImage" src="imgs_folder/song_4.jpg" style="cursor:pointer;" width="300px">
+                    <audio class="myAudio" src="videoAudio_folder/song_thejassz.mp4" style="display:none;"></audio>
+                    <div class="overlay">Click Me</div>
+                </div>
+
             </div>
     </section>
     <script>
@@ -116,7 +137,7 @@
         #gallery {
             display: flex;
             flex-wrap: wrap; /* Allow items to wrap if they don't fit in one row */
-            justify-content: space-around; /* Distribute space evenly */
+            justify-content: center; /* Distribute space evenly */
         }
 
         #gallery img {
@@ -132,7 +153,7 @@
 
         /* Add a hover effect to give the images a "lift" when hovered */
         #gallery img:hover {
-            transform: translateY(-10px); /* Move the image slightly up */
+            transform: scale(1.1);
         }
         .overlay {
             position: absolute;
@@ -149,6 +170,7 @@
             opacity: 0; /* Initially hidden */
             transition: opacity 0.3s ease;
             pointer-events: none;
+            border-radius: 5%;
         }
 
         /* Show overlay when image is hovered */
