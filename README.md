@@ -81,7 +81,7 @@ The project has been tested on modern web browsers (Chrome, Firefox, Edge) and p
 
 ## Credits References
 - The text for the "Vintage Items" section was inspired by various retro catalogs from the '90s.
-- All images used in this project were sourced from the internet and online archives : [https://www.pinterest.com/search/pins/?q=retro+song+covers&rs=typed]
+- All images used in this project were sourced from the internet and online archives : [https://www.pinterest.com/search/pins/?q=retro+song+covers&rs=typed, https://www.lazada.sg/products/avhdmi-nes-mini-classic-edition-retro-video-games-console-with-2-controllers-built-in-600-classic-nintendo-games-i2828969481-s19505448890.html?from_gmc=1&fl_tag=1]
 - Spinning disk : [https://www.youtube.com/watch?v=-FNm58Z9GHM&list=PLQBdl5WgVX_V-GhTtenRU9oBt-6Mh54rk&index=1]
 - Hover effects: [https://www.w3schools.com/css/css3_transitions.asp]
 - Animations : [https://www.youtube.com/watch?v=Nloq6uzF8RQ], [https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes]

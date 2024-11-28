@@ -48,61 +48,52 @@
 
 
 
-    <!-- Media Section -->
-    <section id="media" class="dash">
-        <h2 class="page_title">Our Videos</h2>
-        
-        <section id="youtube-video">
-            <h2>Watch Our Performance on YouTube</h2>
-            
-            <iframe width="100%" height="60%" 
-                src="https://www.youtube.com/icXQxumuHAE?si=Udu7r-W1EOIILE-x" 
-                title="YouTube video" 
-                frameborder="0" 
-                allow="accelerometer; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </section>
-    </section>
+<!-- Media Section -->
+<section id="media" class="dash">
+    <h2 class="page_title">Our Videos</h2>
 
-        
-        
-
-
-            <iframe style="border-radius:12px" 
-            src="https://open.spotify.com/embed/track/3IsHapcQ9bDkJZO1g4aWoa?utm_source=generator" 
-            width="35%" 
-            height="152" 
-            frameBorder="0" 
-            allowfullscreen="decor"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
-    
-
-
-        <audio controls>
-            
-            <source src="song.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+    <!-- First Video with Title and Description -->
+    <div class="video-info">
+        <h3 class="video-title">Live Performance - Song 1</h3>
+        <p class="video-description">Watch our amazing performance of Song 1 at the recent concert!</p>
+    </div>
+    <div class="video-container">
         <video controls>
-            <source src="performance.mp4" type="video/mp4">
-            Your browser does not support the video element.
+            <source src="videoAudio_folder/Recording 2024-11-28 170354.mp4" type="video/mp4">
         </video>
-    </section>
+    </div>
 
 
+    <!-- Second Video with Title and Description -->
+    <div class="video-info">
+        <h3 class="video-title">Behind the Scenes - Rehearsal</h3>
+        <p class="video-description">Get an exclusive look at our rehearsal before the big show!</p>
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="videoAudio_folder/Recording 2024-11-28 170837.mp4" type="video/mp4">
+        </video>
+    </div>
 
 
+    <!-- Third Video with Title and Description -->
+    <div class="video-info">
+        <h3 class="video-title">Band Interview</h3>
+        <p class="video-description">Check out our interview where we talk about our journey as a band!</p>
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="videoAudio_folder/Recording 2024-11-28 171634.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</section>
 
 
-
-
+    
+    
     <button class="button-container" id="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
-      
     <section></section>
-
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
@@ -113,44 +104,98 @@
         <audio id="background-music" autoplay loop>
             <source src="videoAudio_folder/80x27s-old-school-rock-248901.mp3" type="audio/mpeg">
         </audio>
+    <script src="js_folder/app.js"></script>
+    <style>     
+        #media {
+            padding: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px; 
+        }
 
+        .page_title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            width: 100%;
+            color: #ff4081;
+        }
 
-        <script src="js_folder/app.js"></script>
+        /* Video Container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 80%; 
+            height: 0;
+            padding-bottom: 45%; 
+            margin-bottom: 30px; 
+            background: #000; 
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
 
-        <style>
-            /* Default styles for larger screens */
-#media {
-    padding: 20px;
-}
+        /* Video Controls */
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
 
-#media .page_title {
-    font-size: 2rem;
-    text-align: center;
-}
+        /* Video Title and Descriptio */
+        .video-info {
+            padding: 20px;
+            text-align: center;
+            background-color: #2b2b2b; 
+            color: #fff;
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
 
-#youtube-video {
-    text-align: center;
-    margin-bottom: 20px;
-}
+        .video-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff4081; 
+            margin-bottom: 15px;
+        }
 
-#youtube-video iframe {
-    width: 1000px;
-    height: 600px;
-}
+        .video-description {
+            font-size: 1rem;
+            color: #ddd;
+        }
 
-/* Responsive adjustments for mobile devices */
-@media screen and (max-width: 768px) {
-    #youtube-video iframe {
-        width: 100%;
-        height: auto; /* Maintain aspect ratio */
-    }
-    
-    #media .page_title {
-        font-size: 1.5rem;
-    }
-}
+        /* Media Query for Smaller Screens */
+        @media (max-width: 768px) {
+            .page_title {
+                font-size: 1.8rem; 
+                margin-bottom: 20px; 
+            }
 
+            .video-title {
+                font-size: 1.2rem;
+                margin-bottom: 10px; 
+            }
+
+            .video-description {
+                font-size: 0.9rem; 
+            }
+
+            .video-container {
+                max-width: 90%;
+                padding-bottom: 50%; 
+            }
+
+            .video-info {
+                padding: 15px; 
+            }
+        }
         </style>
     </body>
-    </html>
+</html>
     
