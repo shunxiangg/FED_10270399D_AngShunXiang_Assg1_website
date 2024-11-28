@@ -81,14 +81,14 @@ The project has been tested on modern web browsers (Chrome, Firefox, Edge) and p
 
 ## Credits References
 - The text for the "Vintage Items" section was inspired by various retro catalogs from the '90s.
-- All images used in this project were sourced from the internet and online archives.
+- All images used in this project were sourced from the internet and online archives : [https://www.pinterest.com/search/pins/?q=retro+song+covers&rs=typed]
 - Spinning disk : [https://www.youtube.com/watch?v=-FNm58Z9GHM&list=PLQBdl5WgVX_V-GhTtenRU9oBt-6Mh54rk&index=1]
 - Hover effects: [https://www.w3schools.com/css/css3_transitions.asp]
 - Animations : [https://www.youtube.com/watch?v=Nloq6uzF8RQ], [https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes]
 - ChatGPT : [https://chatgpt.com/]
 - W3Schools : [https://www.w3schools.com/html/default.asp]
 - freecodecamp : [https://www.freecodecamp.org/learn/2022/responsive-web-design/]
-
+- [https://www.youtube.com/watch?v=56KEwU-IcVM, https://www.youtube.com/watch?v=icXQxumuHAE, ]
 
 
 ### Acknowledgements
