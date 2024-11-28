@@ -7,6 +7,7 @@
     <title>OUR VIDEOS</title>
     <link rel="stylesheet" href="css_folder/styles.css">
     <link rel="stylesheet" href="css_folder/Normalize.css">
+    <link rel="stylesheet" href="css_folder/volume.css">
 <body>
     <header>
         <nav class="navbar">
@@ -87,7 +88,28 @@
         <audio id="background-music" autoplay loop>
             <source src="videoAudio_folder/80x27s-old-school-rock-248901.mp3" type="audio/mpeg">
         </audio>
+        <!-- Volume Button -->
+    <div id="volumeButton">
+        <i class="volume-icon">🔊</i>
+    </div>
+
+    <!-- Mute Button -->
+    <div id="muteButton">
+        <i class="mute-icon">🔇</i>
+    </div>
+
+    <!-- Volume Slider Container (Initially hidden) -->
+    <div id="volumeSliderContainer">
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
+    </div>
+
+
+
+
+
+
     <script src="js_folder/app.js"></script>
+    <script src="js_folder/volume.js"></script>
     <style>     
         #media {
             padding: 4px;
