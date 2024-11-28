@@ -1,0 +1,94 @@
+
+#volumeButton {
+    position: fixed;
+    bottom: 39px;
+    right: 190px;
+    width: 50px;
+    height: 50px;
+    background-color: #555555; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+    
+    box-shadow: 0 6px #111; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+#volumeButton:hover {
+    background-color: #6b6b6b; 
+    transform: translateY(-2.5px); 
+    box-shadow: 0 10px #111; 
+}
+
+
+#volumeButton:active {
+    transform: translateY(2px); 
+    box-shadow: 0 4px #111; 
+}
+
+
+#muteButton {
+    position: fixed;
+    bottom: 39px;
+    right: 255px;
+    width: 50px;
+    height: 50px;
+    background-color: #555555; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+    
+    box-shadow: 0 6px #111;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+#muteButton:hover {
+    background-color: #6b6b6b;
+    transform: translateY(-4px); 
+    box-shadow: 0 10px #111; 
+}
+
+#muteButton:active {
+    transform: translateY(2px); 
+    box-shadow: 0 4px #111; 
+}
+
+
+#volumeSliderContainer {
+    position: fixed;
+    bottom: 30px;
+    right: 185px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 10px;
+    height: 160px;  
+    width: 40px;   
+    border-radius: 50px;  
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+#volumeSlider {
+    transform: rotate(-90deg);
+    width: 90px; 
+    appearance: none;
+    background: #fff;  
+    border-radius: 5px;  
+    height: 5px;  
+    cursor: pointer;
+    outline: none;
+    margin-top: -50px;  /*move slider up */
+}
+

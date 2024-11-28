@@ -38,9 +38,9 @@ header nav ul li a {
 /* Hover effect       THE (:) change colour when click -while- (.) is when the thing is active*/
 .nav-links li a.hover,
 .nav-links li a:hover {
-    text-decoration: underline; /* Underline on hover */
-    transform: translateY(-6px); /* Move up slightly */
-    color: #F3C623; /* Hover color for links */
+    text-decoration: underline; 
+    transform: translateY(-6px); 
+    color: #F3C623; 
 }
 
 /* Ensure the rest of the layout is not affected */
@@ -48,7 +48,7 @@ header nav ul li a {
 .nav-links li a:active {
     text-decoration: underline; 
     transform: translateY(0px); 
-    color: #F3C623; /* Hover color for links */
+    color: #F3C623; 
     
 }
 
@@ -941,8 +941,6 @@ form button:active,
     font-size: 16px;
     z-index: 1000; /* Ensure the button stays on top of other elements */
     }
-
-
 
 
 
