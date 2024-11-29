@@ -17,7 +17,9 @@ Welcome to my imaginative retro-inspired website! This project brings to life th
 - [Testing](#testing)
   - [Contact Form Testing](#Contact-Form-Testing)
   - [Browser and Device Testing](#Browser-and-Device-Testing)
-- [Credits](#credits)
+  - [functional payment page](#functional-payment-page)
+  - [Music play upon clicked](#music-play-upon-clicked)
+- [Credits References](#credits-References)
 -[Acknoledgements](#acknowledgements)
 
 ## Design Process
@@ -38,22 +40,26 @@ The design process included the creation of wireframes and mockups in Figma to m
 Figma Link: [(https://www.figma.com/design/mVbceNVO3Hkt7LkwaJXwlS/FED_AngShunXiang?t=PFJn94sFUJRxUmaA-1)]
 
 ## Features
+### Existing Features
+- **Vintage Color Scheme** - Brings out the feeling of old-school design with bold and vibrant hues.
+- **Retro Fonts** - Uses vintage typography that evokes nostalgia, creating a cohesive retro look.
+- **Interactive Elements** - Includes engaging buttons, animations and a spinning retro disk.
 - **Vintage items**: Old items, Music, img, etc
 - **Retro Fonts**: Classic fonts that give the website an authentic retro feel.
 - **Vintage Color Scheme**: Some vintage colors.
 - **Interactive Elements**: Fun and engaging interactive elements.
 - **Animation Emelemts**: Fun animations.
-
-### Existing Features
-- **Vintage Color Scheme** - Brings out the feeling of old-school design with bold and vibrant hues.
-- **Retro Fonts** - Uses vintage typography that evokes nostalgia, creating a cohesive retro look.
-- **Interactive Elements** - Includes engaging buttons, animations and a spinning retro disk.
+- **Add to Cart**: Total amount increases when item is added to cart
+- **Background Music**: ALERT - music may be loud
+- **Volume Slider**: Adjust volume to user liking
+- **Clickable Gallery**: When songs in the gallery are clicked song will be played
+- **Responsive Design** - Currently, the design is optimized for desktop. Future versions will include responsiveness for mobile devices.
+- **Songs & Videos** - Short songs and videos are able to be pushed
 
 ### Features Left to Implement
-- **Responsive Design** - Currently, the design is optimized for desktop. Future versions will include responsiveness for mobile devices.
+- **Long Songs & Videos** - Currently facing difficulties uploading songs and videos to git hub ERROR:[file size too big]
 - **User Login System** - Plan to implement user authentication for a personalized experience.
 - **More Items** - Expand the gallery to include more retro collectibles from the '80s and '90s.
-- **Songs & Videos** - Currently facing difficulties uploading songs and videos to git hub ERROR:[file size too big]
 - **Payment page** - A payment page where users can add up the total amount for items bought and display them in the store, you would follow these steps using JavaScript and DOM manipulation methods like getElementById or querySelector.
 
 ## Technologies Used
@@ -61,7 +67,6 @@ This project uses technologies as given bellow:
 - **HTML5** - Structure of the website.
 - **CSS3** - For styling, animations, and retro visual effects.
 - **JavaScript** - To create interactivity and enhance the user experience.
-
 
 ## Installation
 To run this project locally, follow these steps:
@@ -77,7 +82,13 @@ To run this project locally, follow these steps:
 4. Complete the form with valid inputs and verify that a success message is displayed.
 
 ### Browser and Device Testing
-The project has been tested on modern web browsers (Chrome, Firefox, Edge) and performs as expected. However, it has not yet been fully optimized for television size screens, which is a planned future improvement.
+The website has been tested on modern web browsers (Chrome, Firefox, Edge) and performs as expected. However, it has not yet been fully optimized for television size screens, which is a planned future improvement.
+
+### functional payment page
+The website has a cart checkout page but not a fully functional payment page where users are able to input their card into the website.
+
+### Music play upon clicked
+The website has a gallery page where all the songs of the band are placed there and upon clicked song will start playing
 
 ## Credits References
 - The text for the "Vintage Items" section was inspired by various retro catalogs from the '90s.
