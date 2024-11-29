@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     background: linear-gradient(to right, #f8b400, #fce38a); /*Vintage yellow gradient*/
     
@@ -6,8 +6,6 @@ body {
     font-family: 'Courier New', Courier, monospace; /* Monospace font for retro feel */
     color: #333; /* Default text color */
 }
-
-
 
 
 /* /////////////////////////////    interactive nav bar when hover  ///////////////////////////////////////////*/
@@ -52,7 +50,6 @@ header nav ul li a {
     
 }
 
-
 /* /////////////// -Navbar styles- ///////////////////*/
 .navbar{
     display: flex;
@@ -71,7 +68,6 @@ header nav ul li a {
     color: #4a3f35;
     border-radius: 8px;
 }
-
 
 
 /* Styling for the moving logo image */
@@ -116,14 +112,10 @@ header nav ul li a {
 }
 
 
-/* /////////////////////////////    ///////////////////  ///////////////////////////////////////////*/
-
-
 .dash{
     border: 3px dashed #4a4a4a;
     
 }
-
 
 /* Section styles */
 section {
@@ -174,7 +166,6 @@ footer p {
     box-shadow: none;
 }
 
-
 /* Keyframes for spinning effect */
 @keyframes spin {
     from {
@@ -207,8 +198,6 @@ footer p {
     }
 }
 
-
-
 .home-intro {
     background-color: #e3f2fd; /* Light blue background */
     padding: 50px;
@@ -218,8 +207,6 @@ footer p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
     
 }
-
-
 
 
 .page_title{
@@ -350,14 +337,7 @@ form textarea {
 
 
 
-
-
-
 /* Store Page Styles */
-
-
-
-
 .store-items {
     
     display: grid;
@@ -386,7 +366,6 @@ form textarea {
 .store-items .item:hover {
     background-color: #b298ab; /* Light purple on hover */
 }
-
 
 
 /* //////////////////////////////////// */
@@ -453,10 +432,7 @@ form textarea {
 
 /* //////////////////////////////////// */
 
-/* ------button hover for buying items ------------ ******  */
-
-/* Buy Now button */
-
+/* ------button hover ------------ ***  */
 
 
 /* 3D Pop-up Button */
@@ -499,7 +475,6 @@ form button:active,
 
 
 
-
 /*store page pop up*/
 
 /* Modal Title */
@@ -524,7 +499,6 @@ form button:active,
     color: #333;
     margin: 10px 0;
 }
-
 
 
 #show_hyperlink {
@@ -742,16 +716,6 @@ form button:active,
     }
 }
 
-    
-
-
-
-
-
-
-
-
-
 
 
 /* Filter for shows*/
@@ -836,14 +800,6 @@ form button:active,
 
 
 
-
-
-
-
-
-
-
-
 #about p {
     font-size: 1.2em;
     color: #333; 
@@ -892,10 +848,6 @@ form button:active,
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace; /* Retro font */
 }
-
-
-
-
 
 
 /* Flexbox container for price and button */
