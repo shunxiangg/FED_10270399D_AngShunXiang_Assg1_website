@@ -116,9 +116,7 @@ header nav ul li a {
 }
 
 
-
 /* /////////////////////////////    ///////////////////  ///////////////////////////////////////////*/
-
 
 
 .dash{
@@ -137,12 +135,13 @@ section {
 }
 
 h2 {
-    color: #7c4d99; /* Deep purple for headings */
+    color: #2c3e50; /* Dark Blue for headings */
     text-shadow: 
-        0 0 5px rgba(124, 77, 153, 0.5), /* Soft glow */
-        0 0 10px rgba(124, 77, 153, 0.7), /* Stronger glow */
-        0 0 15px rgba(124, 77, 153, 1); /* Brightest glow */
+        0 0 5px rgba(44, 62, 80, 0.5), /* Soft dark blue glow */
+        0 0 10px rgba(44, 62, 80, 0.7), /* Stronger dark blue glow */
+        0 0 15px rgba(44, 62, 80, 1); /* Brightest dark blue glow */
 }
+
 
 p {
     font-size: 1.2em;
@@ -914,60 +913,6 @@ form button:active,
     font-weight: bold;
     padding-left: 7%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
