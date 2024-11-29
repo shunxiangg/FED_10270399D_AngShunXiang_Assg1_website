@@ -18,9 +18,6 @@ document.addEventListener('click', (event) => {
 });
 
 
-
-
-
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // this line prevents the thankyou message from disappearing
     document.getElementById('contactForm').style.display = 'none'; // hide the form
@@ -28,14 +25,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 });
 
 
-
-
-
-
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
-
 
 
 function showModal(title, imageSrc, shortDescription, longDescription) {
@@ -55,8 +47,6 @@ function closeModal() {
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
-
-
 
 // Function to filter store items by price
 function filterByPrice() {

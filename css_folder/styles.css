@@ -24,7 +24,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #f9f9f9; /* text color */
+    color: #f9f9f9; 
     text-decoration: none;
     font-size: 1.3em; /* navigation bar words */
     padding: 10px; 
@@ -164,56 +164,53 @@ footer p {
     margin: auto;
     animation: spin 10s linear infinite;
     box-shadow: none;
+    
 }
 
-/* Keyframes for spinning effect */
 @keyframes spin {
     from {
-        transform: rotate(0deg); /* Start from 0 degrees */
+        transform: rotate(0deg); 
     }
     to {
-        transform: rotate(360deg); /* Rotate to 360 degrees */
+        transform: rotate(360deg); 
     }
 }
 
 @media only screen and (max-width: 600px) {
-    /* Spinning image size for mobile */
     #index_spinningimages {
-        height: 200px; /* Reduce the size for mobile */
+        height: 200px; 
     }
 
-    /* Flexbox for section content */
     section {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center the content horizontally */
-        justify-content: center; /* Center the content vertically */
-        text-align: center; /* Center the text */
-        padding: 10px; /* Adjust padding for mobile */
+        align-items: center;
+        justify-content: center; 
+        text-align: center; 
+        padding: 10px; 
     }
 
-    /* Adjust the title font size for mobile */
     .page_title {
-        font-size: 24px; /* Reduce font size for mobile */
+        font-size: 24px; 
     }
 }
 
 .home-intro {
-    background-color: #e3f2fd; /* Light blue background */
+    background-color: #e3f2fd; 
     padding: 50px;
     border-radius: 10px;
     margin: 20px auto;
     max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     
 }
 
 
 .page_title{
     font-size: 2.5em;
-    color: #ff5722; /* Bright orange for headings */
+    color: #ff5722; 
     padding: 1px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Added shadow for emphasis */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
  
 }
 
@@ -226,7 +223,6 @@ section p, section ul {
 section ul {
     list-style-type:decimal-leading-zero; /* Circular bullets for lists   -     NEED TO CHANGE */
     margin-left: 20px;
-    
 }
 
 section img {
@@ -244,14 +240,13 @@ section img:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
-
 /* Contact Page Styles (contact.html) and for some other pages  */
 form {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     margin: 20px auto;
-    background-color: #f0f0f0; /* Light gray form background */
+    background-color: #f0f0f0; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -260,14 +255,14 @@ form {
 form label {
     margin-top: 10px;
     font-weight: bold;
-    color: #4a4a4a; /* Darker label color */
+    color: #4a4a4a;
 }
 
 form input,
 form textarea {
     padding: 10px;
     margin-top: 5px;
-    border: 2px solid #4a4a4a; /* Dark border for input fields */
+    border: 2px solid #4a4a4a;
     border-radius: 5px;
     font-size: 1em;
     width: 100%;
@@ -339,7 +334,6 @@ form textarea {
 
 /* Store Page Styles */
 .store-items {
-    
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px; /* Space between items */
@@ -350,7 +344,6 @@ form textarea {
 
 /* Box around Each item in the store */
 .store-items .item {
-    
 
     display: flex;
     flex-direction: column;
@@ -367,9 +360,7 @@ form textarea {
     background-color: #b298ab; /* Light purple on hover */
 }
 
-
 /* //////////////////////////////////// */
-
 /* Make product images the same size */
 .item img {
     width: 250px; 
@@ -377,7 +368,6 @@ form textarea {
     object-fit: cover; /* image retains its aspect ratio */
     border-radius: 5px;
     
-
     display: block; /* Makes the image behave as a block element */
     margin: 0 auto; /* centers the image */
     cursor: pointer;
@@ -431,9 +421,7 @@ form textarea {
 }
 
 /* //////////////////////////////////// */
-
 /* ------button hover ------------ ***  */
-
 
 /* 3D Pop-up Button */
 form button,
@@ -459,27 +447,24 @@ form button,
 /* Button hover effect */
 form button:hover,
 .button-container:hover {
-    background-color: #d9534f; /* Tomato color on hover */
+    background-color: #d9534f; 
     transform: translateY(-4px); /* Moves the button up slightly to pop */
-    box-shadow: 0 10px #8b4513; /* Deeper shadow on hover */
-    font-family: 'Dancing Script', cursive; /* Retro font */
+    box-shadow: 0 10px #8b4513; 
+    font-family: 'Dancing Script', cursive; 
 }
 
 /* Button active effect (when clicked) */
 form button:active,
 .button-container:active {
-    transform: translateY(2px); /* Moves the button down */
-    box-shadow: 0 4px #8b4513; /* Shallower shadow for a pressed effect */
+    transform: translateY(2px); 
+    box-shadow: 0 4px #8b4513; /* shadow for a pressed effect */
 }
 
 
-
-
 /*store page pop up*/
-
 /* Modal Title */
 #modalTitle {
-    font-family: 'Playfair Display', serif; /* Vintage font */
+    font-family: 'Playfair Display', serif; 
     font-size: 24px;
     color: #10375C; 
     text-align: center;
@@ -494,7 +479,7 @@ form button:active,
 
 /* Long Description */
 #modalLongDescription {
-    font-family: 'Roboto', sans-serif; /* Clean sans-serif */
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #333;
     margin: 10px 0;
@@ -605,7 +590,7 @@ form button:active,
 /* Hover effect: move the image up */
 .show-image:hover {
     transform: translateY(-15px); /* Moves the image 10px upwards */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Optional: enhance shadow on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -623,7 +608,7 @@ form button:active,
     font-size: 44px;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'Gochi Hand', cursive; /* Apply Gochi Hand font */
+    font-family: 'Gochi Hand', cursive; 
 }
 
 /* Show description styling */
@@ -759,12 +744,12 @@ form button:active,
 /* Media query for non-mobile (larger) screens */
 @media screen and (min-width: 768px) {
     .filter-dropdown {
-        margin-right: 20px; /* Adds space between the dropdown and button */
+        margin-right: 20px;
     }
 }
 
 .button-link {
-    padding: 8px 16px; /* Optional: Adjust button padding */
+    padding: 8px 16px; 
 }
 
 #store-filter-dropdown{
@@ -772,14 +757,13 @@ form button:active,
 }
 
 .filter-dropdown:hover {
-    background-color: #d1d0c2; /* Slight color change on hover */
+    background-color: #d1d0c2;
 }
 
 .filter-dropdown:focus {
-    border-color: #525252; /* Darker border to show focus */
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4); /* Enhance inner shadow on focus */
+    border-color: #525252; 
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -799,7 +783,6 @@ form button:active,
 }
 
 
-
 #about p {
     font-size: 1.2em;
     color: #333; 
@@ -817,18 +800,18 @@ form button:active,
 }
 
 .member {
-    background-color: #e039b74f; /* ********** background colour for image container*/
+    background-color: #e039b74f; /*** background colour for image container*/
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     
 }
 
 .member:hover {
-    transform: translateY(-5px); /* Hover effect to lift up the card */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     background-color: #b298ab;
 }
 .member img {
@@ -844,23 +827,23 @@ form button:active,
 
 .member h3 {
     font-size: 1.8em;
-    color: #d2691e; /* A vintage brown color for the member's name */
+    color: #d2691e;
     margin-bottom: 10px;
-    font-family: 'Courier New', Courier, monospace; /* Retro font */
+    font-family: 'Courier New', Courier, monospace; 
 }
 
 
 /* Flexbox container for price and button */
 .price-button-container {
     display: flex;
-    align-items: center; /* Align price and button vertically */
-    justify-content: space-between; /* Optional: adds space between elements */
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 /* Price styles */
 .product-price {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.8rem; /* Adjust for readability */
+    font-size: 1.8rem; 
     color: #ffffff;
     font-weight: bold;
     padding-left: 7%;
