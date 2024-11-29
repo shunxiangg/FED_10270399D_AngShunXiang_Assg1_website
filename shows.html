@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 
-   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPCOMING SHOWS</title>
@@ -22,7 +20,6 @@
                     <img src="imgs_folder/smiths-logo.png" alt="The Fictional Band">
                 </a>
             </div>
-    
             <!-- Navigation Links -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -33,7 +30,6 @@
                 <li><a href="store.html">Store</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-    
             <!-- Hamburger menu icon -->
             <div class="menu-icon" id="menuIcon">
                 <span class="bar"></span>
@@ -42,8 +38,6 @@
             </div>
         </nav>
     </header>
-
-
 
     <!-- Filter Section -->
     <section id="filter-section" class="filter-container">
@@ -96,10 +90,6 @@
     </section>
 </section>
 
-
-
-
-
 <!-- Past Shows Section -->
 <section id="past-shows" class="dash">
     <h2 class="page_title">Past Shows</h2>
@@ -108,9 +98,6 @@
         <a href="#show-past-2" class="button-link">3rd April 2006 - Spring Rock Concert</a>
         <a href="#show-past-3" class="button-link">20th January 2010 - Winter Night Music</a>
     </div>
-
-
-    
 
     <!-- Past Shows Details -->
     <section class="shows-section">
@@ -142,12 +129,6 @@
         </div>
     </section>
 </section>
-
-
-
-
-
-
 
 <!-- Ticket Form -->
 <div id="ticketModal" class="modal">
@@ -209,12 +190,10 @@
     <div id="volumeButton">
         <i class="volume-icon">🔊</i>
     </div>
-
     <!-- Mute Button -->
     <div id="muteButton">
         <i class="mute-icon">🔇</i>
     </div>
-
     <!-- Volume Slider Container (Initially hidden) -->
     <div id="volumeSliderContainer">
         <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
@@ -227,12 +206,10 @@
     function openModal() {
         document.getElementById("ticketModal").style.display = "block";
     }
-
     // 
     function closeModal() {
         document.getElementById("ticketModal").style.display = "none";
     }
-
     // 
     function filterShows() {
         const filter = document.getElementById("showFilter").value;
@@ -250,11 +227,7 @@
             pastSection.style.display = "block";
         }
     }
-
-    
-
 </script>
-
 <style>
     .show-past {
         margin: 20px auto;
@@ -271,7 +244,6 @@
         box-shadow: 0 6px #D91656; /* Shadow for 3D effect with darker shade */
         height: 50px; /* Fixed height */
     }
-
     .modal {
         display: none; /* Hidden by default */
         position: fixed;
@@ -284,7 +256,6 @@
         overflow: auto;
         padding-top: 20px;
     }
-
     .modal-content {
         background-color: #f4e1c1; /* Light cream background for a vintage feel */
         margin: 5% auto;
@@ -294,30 +265,24 @@
         border-radius: 15px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
-
     /* Close button */
-
-
     .close:hover,
     .close:focus {
         color: #333; /* Vintage red hover effect */
         text-decoration: none;
         cursor: pointer;
     }
-
     /* Form Styling */
     form {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
-
     label {
         font-family: 'Courier New', Courier, monospace; /* Old-school typewriter font */
         font-size: 16px;
         color: #333;
     }
-
     input, select, button {
         padding: 10px;
         font-size: 16px;
@@ -326,33 +291,27 @@
         border-radius: 5px;
         
     }
-
     input{
         width: 100%;
         max-width: 100%;
     }
-
     select {
         width: 100%;
         max-width: 100%;
         background-color: #fff9db; 
     }
 
-
     button:hover {
         background-color: #d9534f; /* Vintage red on hover */
     }
-
     /* Multi-Select Styling */
     select[multiple] {
         height: 100%;
         width: 100%;
     }
-
     .modal-content {
         width: 100%;
     }
-
     /* Submit Button Adjustment */
     button[type="submit"] {
         align-self: center;
@@ -362,7 +321,6 @@
         background-color: #d9534f;
         border-radius: 5px;
     }
-
     /* Media Queries for Responsive Design */
     @media (max-width: 768px) {
         /* Modal Content Adjustments for Smaller Screens */
@@ -380,8 +338,6 @@
             padding: 0 20px; /* Add some padding on sides */
         }
     }
-
-
     #formAgeGroup_radiobuttons {
         display: flex;
         align-items: center;
@@ -389,31 +345,26 @@
     #formAgeGroup_radiobuttons input[type="radio"] {
         transform: scale(2.2);
     }
-
     /* Style for required invalid fields */
     input:invalid, select:invalid {
         border: 2px solid #d9534f; /* Red border for invalid fields */
         background-color: #f8d7da; /* Light red background for invalid fields */
     }
-
     input:required:invalid, select:required:invalid {
         border: 2px solid #d9534f; /* Red border for invalid fields */
         background-color: #f8d7da; /* Light red background */
         box-shadow: 0 0 5px rgba(217, 83, 79, 0.5); /* Light shadow to highlight */
     }
-
     /* Style for the form when there are invalid fields */
     form input:focus:invalid, form select:focus:invalid {
         outline: none;
         box-shadow: 0 0 10px rgba(217, 83, 79, 0.7); /* Glow effect when focused */
     }
-
     /* Optional: Custom message for invalid input */
     input:required:invalid:focus, select:required:invalid:focus {
         border-color: #d9534f;
         background-color: #f8d7da;
     }
-
     input:required:invalid::after {
         content: "Please fill out this field"; /* Custom message */
         color: #d9534f;
@@ -422,5 +373,4 @@
     }
 </style>
 </body>
-
 </html>

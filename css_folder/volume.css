@@ -25,12 +25,10 @@
     box-shadow: 0 10px #2b0068; 
 }
 
-
 #volumeButton:active {
     transform: translateY(2px); 
     box-shadow: 0 4px #111; 
 }
-
 
 #muteButton {
     position: fixed;
@@ -91,4 +89,3 @@
     outline: none;
     margin-top: -50px;  /*move slider up */
 }
-

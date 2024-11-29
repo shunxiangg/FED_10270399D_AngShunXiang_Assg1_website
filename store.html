@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-
 
     <link rel="stylesheet" href="css_folder/styles.css">
     <link rel="stylesheet" href="css_folder/Normalize.css">
     <link rel="stylesheet" href="css_folder/volume.css">
     </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -21,7 +17,6 @@
                     <img src="imgs_folder/smiths-logo.png" alt="The Fictional Band">
                 </a>
             </div>
-
             <!-- Navigation Links -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -40,26 +35,20 @@
                 </div>
         </nav>
     </header>
-
 <section>
-<!-- Price Filter Section -->
-<section id="price-filter" class="filter-container">
-    <label for="price-range" class="filter-label">Filter by Price:</label>
-    <select id="price-range" class="filter-dropdown">
-        <option value="all">All</option>
-        <option value="0-50">Up to $50</option>
-        <option value="51-100">$51 - $100</option>
-        <option value="101-150">$101 - $150</option>
-        <option value="151-200">$151 - $200</option>
-        <option value="201-9999">Above $200</option>
-    </select>
-     
-    <a class="button-link" onclick="filterByPrice()">Apply Filter</a>
-
-</section>
-
-
-
+    <!-- Price Filter Section -->
+    <section id="price-filter" class="filter-container">
+        <label for="price-range" class="filter-label">Filter by Price:</label>
+        <select id="price-range" class="filter-dropdown">
+            <option value="all">All</option>
+            <option value="0-50">Up to $50</option>
+            <option value="51-100">$51 - $100</option>
+            <option value="101-150">$101 - $150</option>
+            <option value="151-200">$151 - $200</option>
+            <option value="201-9999">Above $200</option>
+        </select>
+        <a class="button-link" onclick="filterByPrice()">Apply Filter</a>
+    </section>
 </section>
     <!-- Store Section -->
     <section id="store" class="dash">
@@ -185,15 +174,11 @@
                     <p class="product-price">$190</p>
                     <button class="button-container" onclick="addToCart('Earth Mini Guitar', 190)">Buy Now</button>
                 </div>
-            </div>
-            
-        </div>
-        
-            
-
-
-
+            </div> 
             <!-- Add more items  -->
+
+        </div>
+            
         </div>
     </section>
     <section></section>
@@ -206,10 +191,8 @@
         <button class="button-container" onclick="clearCart()">Clear</button>
     </section>
     <section></section>
-    
         <button class="button-container" id="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
       
-
     <!-- Modal Structure -->
     <div id="productModal" class="modal">
         <div class="modal-content">
@@ -222,10 +205,6 @@
             <button id="modalBuyButton" class="button-container" onclick="addToCart(modalItemName, modalItemPrice)">Buy Now</button>
         </div>
     </div>
-    
-
-
-
 <section></section>
     <!-- Footer -->
     <footer>
@@ -241,32 +220,18 @@
     <div id="volumeButton">
         <i class="volume-icon">🔊</i>
     </div>
-
     <!-- Mute Button -->
     <div id="muteButton">
         <i class="mute-icon">🔇</i>
     </div>
-
     <!-- Volume Slider Container (Initially hidden) -->
     <div id="volumeSliderContainer">
         <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
     </div>
 
-
-
-
-
-
-  
     <script src="js_folder/cart.js"></script>
     <script src="js_folder/app.js"></script>
     <script src="js_folder/volume.js"></script>
-    
-    <style>
-        
-
-
-    </style>
 </body>
 
 </html>

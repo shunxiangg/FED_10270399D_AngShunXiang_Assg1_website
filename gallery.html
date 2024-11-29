@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GALLERY</title>
-    
- 
-    
     <link rel="stylesheet" href="css_folder/styles.css">
     <link rel="stylesheet" href="css_folder/Normalize.css">
     <link rel="stylesheet" href="css_folder/volume.css">
-    
-
-
 </head>
 <body>
     <header>
@@ -23,7 +16,6 @@
                     <img src="imgs_folder/smiths-logo.png" alt="The Fictional Band">
                 </a>
             </div>
-    
             <!-- Navigation Links -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -34,7 +26,6 @@
                 <li><a href="store.html">Store</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-    
             <!-- Hamburger menu icon -->
             <div class="menu-icon" id="menuIcon">
                 <span class="bar"></span>
@@ -43,15 +34,7 @@
             </div>
         </nav>
     </header>
-
-
-
-
-
 <section></section>
-
-
-
 
     <!-- Filter  -->
     <section id="photos" class="dash">
@@ -116,11 +99,7 @@
             });
         });
     </script>
-    
-
-
     <button class="button-container" id="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
-      
 <section></section>
 
     <!-- Footer -->
@@ -137,18 +116,14 @@
     <div id="volumeButton">
         <i class="volume-icon">🔊</i>
     </div>
-
     <!-- Mute Button -->
     <div id="muteButton">
         <i class="mute-icon">🔇</i>
     </div>
-
     <!-- Volume Slider Container (Initially hidden) -->
     <div id="volumeSliderContainer">
         <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
     </div>
-
-
 
     <style>
         #gallery {
@@ -156,7 +131,6 @@
             flex-wrap: wrap; /* Allow items to wrap if they don't fit in one row */
             justify-content: center; /* Distribute space evenly */
         }
-
         #gallery img {
             width: 200px;  /* Set a fixed width */
             height: 200px; /* Set a fixed height */
@@ -167,7 +141,6 @@
             cursor: pointer; /* Change cursor to pointer to indicate clickability */
             transition: transform 0.3s ease; /* Smooth transition for hover effect */
         }
-
         /* Add a hover effect to give the images a "lift" when hovered */
         #gallery img:hover {
             transform: scale(1.1);
@@ -189,13 +162,10 @@
             pointer-events: none;
             border-radius: 5%;
         }
-
         /* Show overlay when image is hovered */
         #gallery div:hover .overlay {
             opacity: 1; /* Make overlay visible */
         }
-
-
     </style>
         <script src="js_folder/app.js"></script>
         <script src="js_folder/volume.js"></script>

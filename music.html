@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,6 @@
                     <img src="imgs_folder/smiths-logo.png" alt="The Fictional Band">
                 </a>
             </div>
-    
             <!-- Navigation Links -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -27,7 +25,6 @@
                 <li><a href="store.html">Store</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-    
             <!-- Hamburger menu icon -->
             <div class="menu-icon" id="menuIcon">
                 <span class="bar"></span>
@@ -37,6 +34,7 @@
         </nav>
     </header>
     <section></section>
+
 <!-- Media Section -->
 <section id="media" class="dash">
     <h2 class="page_title">Our Videos</h2>
@@ -51,7 +49,6 @@
             <source src="videoAudio_folder/Recording 2024-11-28 170354.mp4" type="video/mp4">
         </video>
     </div>
-
 
     <!-- Second Video with Title and Description -->
     <div class="video-info">
@@ -75,38 +72,31 @@
         </video>
     </div>
 </section>
-    
     <button class="button-container" id="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
     <section></section>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 The Fictional Band. All rights reserved.</p>
         <p>Follow us on <a href="https://www.facebook.com/TheSmiths/" target="_blank">Facebook</a>, <a href="https://www.instagram.com/thesmithsofficial/?hl=en" target="_blank">Instagram</a>, <a href="http://www.officialsmiths.co.uk/tqid/" target="_blank">OfficalSmiths</a> and <a href="https://lnk.to/TheSmithsHits" target="_blank">Music</a></p>
     </footer>
 
-        <!-- audio -->
-        <audio id="background-music" autoplay loop>
-            <source src="videoAudio_folder/80x27s-old-school-rock-248901.mp3" type="audio/mpeg">
-        </audio>
+    <!-- audio -->
+    <audio id="background-music" autoplay loop>
+        <source src="videoAudio_folder/80x27s-old-school-rock-248901.mp3" type="audio/mpeg">
+    </audio>
         <!-- Volume Button -->
     <div id="volumeButton">
         <i class="volume-icon">🔊</i>
     </div>
-
     <!-- Mute Button -->
     <div id="muteButton">
         <i class="mute-icon">🔇</i>
     </div>
-
     <!-- Volume Slider Container (Initially hidden) -->
     <div id="volumeSliderContainer">
         <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
     </div>
-
-
-
-
-
 
     <script src="js_folder/app.js"></script>
     <script src="js_folder/volume.js"></script>
@@ -151,7 +141,6 @@
             height: 100%;
             border-radius: 10px;
         }
-
         /* Video Title and Descriptio */
         .video-info {
             padding: 20px;
@@ -162,19 +151,16 @@
             width: 100%;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
-
         .video-title {
             font-size: 1.5rem;
             font-weight: bold;
             color: #ff4081; 
             margin-bottom: 15px;
         }
-
         .video-description {
             font-size: 1rem;
             color: #ddd;
         }
-
         /* Media Query for Smaller Screens */
         @media (max-width: 768px) {
             .page_title {

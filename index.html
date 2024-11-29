@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="css_folder/Normalize.css">
     <link rel="stylesheet" href="css_folder/volume.css">
 </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -20,7 +18,6 @@
                 </a>
             </div>
 
-            
             <!-- Navigation Links -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="active">Home</a></li>
@@ -31,7 +28,7 @@
                 <li><a href="store.html">Store</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-    
+
             <!-- Hamburger menu icon -->
             <div class="menu-icon" id="menuIcon">
                 <span class="bar"></span>
@@ -40,20 +37,12 @@
             </div>
         </nav>
     </header>
-
-
-    
     <section>
         <div>
             <h1 class="page_title" id="typing-text">Welcome Smithers</h1>
         </div>
     </section>
-    
-    
         <img id="index_spinningimages" src="imgs_folder/spinningdisk_the _smiths.webp" alt="The Fictional Band">
-        
-
-
     <div class="spacing">
         <section class="dash" id="band-history">
             <h1 class="page_title">Home Section</h1>
@@ -66,18 +55,8 @@
             <p>For those who want to learn more about The Smiths' history, discover their iconic members, or even explore the possibility of booking them for upcoming shows, this site serves as the perfect hub for both devoted fans and new listeners alike.</p>
         </section>
     </div>
-
-
-
-
-
-
-    <button class="button-container" id="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
-      
-<section></section>
-
-
-
+        <button class="button-container" id="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
+            <section></section>
 
     <!-- Footer -->
     <footer>
@@ -89,6 +68,7 @@
     <audio id="background-music" autoplay loop>
         <source src="videoAudio_folder/80x27s-old-school-rock-248901.mp4" type="audio/mpeg">
     </audio>
+
     <!-- Volume Button -->
     <div id="volumeButton">
         <i class="volume-icon">🔊</i>
@@ -103,55 +83,50 @@
     <div id="volumeSliderContainer">
         <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
     </div>
-
-
-
     <script src="js_folder/app.js"></script>
     <script src="js_folder/volume.js"></script>
     <script>
-          // JavaScript for typing and deleting effect
-          document.addEventListener("DOMContentLoaded", function() {
-            const textElement = document.getElementById('typing-text');
-            const textContent = textElement.textContent;
-    
-            let currentText = '';
-            let isTyping = true;
-            let textIndex = 0;
-            function typeAndDelete() {
-                if (isTyping) {
-                    // Add one character at a time
-                    currentText += textContent.charAt(textIndex);
-                    textElement.textContent = currentText;
-                    textIndex++;
-    
-                    if (textIndex === textContent.length) {
-                        isTyping = false; 
-                        setTimeout(() => { 
-                            currentText = '';
-                            textElement.textContent = currentText;
-                            textIndex = -0; 
-                            isTyping = true; 
-                        }, 5000); 
-                    }
-                } else {
-                    // Delete one character at a time
-                    currentText = currentText.slice(0, -1);
-                    textElement.textContent = currentText;
-    
-                    if (currentText.length === 0) {
-                        isTyping = true; // Start typing again after deleting
-                    }
+        // JavaScript for typing and deleting effect
+        document.addEventListener("DOMContentLoaded", function() {
+        const textElement = document.getElementById('typing-text');
+        const textContent = textElement.textContent;
+
+        let currentText = '';
+        let isTyping = true;
+        let textIndex = 0;
+        function typeAndDelete() {
+            if (isTyping) {
+                // Add one character at a time
+                currentText += textContent.charAt(textIndex);
+                textElement.textContent = currentText;
+                textIndex++;
+
+                if (textIndex === textContent.length) {
+                    isTyping = false; 
+                    setTimeout(() => { 
+                        currentText = '';
+                        textElement.textContent = currentText;
+                        textIndex = -0; 
+                        isTyping = true; 
+                    }, 5000); 
+                }
+            } 
+            else {
+                // Delete one character at a time
+                currentText = currentText.slice(0, -1);
+                textElement.textContent = currentText;
+
+                if (currentText.length === 0) {
+                    isTyping = true; // Start typing again after deleting
                 }
             }
-    
-            // Add typing class to start typing animation
-            textElement.classList.add('typing');
-    
-            // Set interval to type and delete text with a delay
-            setInterval(typeAndDelete, 150); // Adjust the speed by changing 150
+        }
+        // Add typing class to start typing animation
+        textElement.classList.add('typing');
+        // Set interval to type and delete text with a delay
+        setInterval(typeAndDelete, 150); // Adjust the speed by changing 150
         });
     </script>
-    
     <style>
         .spacing{
         margin-top: 10%;
@@ -159,17 +134,13 @@
         margin-left: 0.5%;
         margin-right: 0.5%;
         }
-
-        
         /* typing and deleting effect */
         .typing {
             animation: typing 3s steps(30) 2s forwards;
         }
-
         .deleting {
             animation: deleting 16s steps(30) 10s forwards;
         }
-
         /* Typing animation styles */
         #typing-text {
             font-family: 'Courier New', Courier, monospace;
@@ -180,7 +151,6 @@
             width: 0;
             margin: 0 auto;
         }
-
         /* Typing animation */
         @keyframes typing {
             from {
@@ -190,7 +160,6 @@
                 width: 100%;
             }
         }
-
         /* Deleting animation */
         @keyframes deleting {
             from {
@@ -200,12 +169,6 @@
                 width: 0;
             }
         }
-
-            
-    
-        
-    </style>
-       
+    </style> 
 </body>
-
 </html>
