@@ -56,3 +56,45 @@ function closeModal() {
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
 
+
+
+// Function to filter store items by price
+function filterByPrice() {
+    // Get the selected price range
+    const priceRange = document.getElementById('price-range').value;
+
+    // Get all the store items
+    const items = document.querySelectorAll('.item');
+
+    // Loop through all the items and show/hide based on the price range
+    items.forEach(item => {
+        const priceText = item.querySelector('.product-price').textContent;
+        const price = parseFloat(priceText.replace('$', ''));
+
+        let showItem = false;
+
+        switch (priceRange) {
+            case 'all':
+                showItem = true;
+                break;
+            case '0-50':
+                if (price <= 50) showItem = true;
+                break;
+            case '51-100':
+                if (price > 50 && price <= 100) showItem = true;
+                break;
+            case '101-150':
+                if (price > 100 && price <= 150) showItem = true;
+                break;
+            case '151-200':
+                if (price > 150 && price <= 200) showItem = true;
+                break;
+            case '201-9999':
+                if (price > 200) showItem = true;
+                break;
+        }
+
+        // Show or hide the item based on the price range
+        item.style.display = showItem ? 'block' : 'none';
+    });
+}
