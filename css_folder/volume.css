@@ -20,9 +20,9 @@
 }
 
 #volumeButton:hover {
-    background-color: #6b6b6b; 
-    transform: translateY(-2.5px); 
-    box-shadow: 0 10px #111; 
+    background-color: #5100c4; 
+    transform: translateY(-2px); 
+    box-shadow: 0 10px #2b0068; 
 }
 
 
@@ -53,9 +53,9 @@
 }
 
 #muteButton:hover {
-    background-color: #6b6b6b;
-    transform: translateY(-4px); 
-    box-shadow: 0 10px #111; 
+    background-color: #5100c4;
+    transform: translateY(-2px); 
+    box-shadow: 0 10px #2b0068; 
 }
 
 #muteButton:active {
