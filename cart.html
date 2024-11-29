@@ -6,6 +6,7 @@
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="css_folder/styles.css">
     <link rel="stylesheet" href="css_folder/Normalize.css">
+    <link rel="stylesheet" href="css_folder/cart.css">
 </head>
 <body>
     <header>
@@ -39,9 +40,11 @@
   
     <section id="cart-section">
         <h1>Your Cart</h1>
-        <ul id="cartItems">
-            <!-- Items will be dynamically added here -->
-        </ul>
+            <div class="cart-items-container">
+                <ul id="cartItems">
+                    <!-- Items will be added here through js-->
+                </ul>
+            </div>
         <div id="cartTotal">Total: $0.00</div>
         <div>
             <button class="button-container" onclick="clearCart()">Clear</button>

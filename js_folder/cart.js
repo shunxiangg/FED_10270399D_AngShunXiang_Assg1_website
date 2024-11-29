@@ -31,7 +31,6 @@ function clearCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCartDisplay();
 }
-
 // Function to update the cart display
 function updateCartDisplay() {
     const cartItemsContainer = document.getElementById('cartItems');
@@ -44,7 +43,15 @@ function updateCartDisplay() {
         total += item.price * item.quantity;
 
         const listItem = document.createElement('li');
-        listItem.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+        
+        // Create container for item text and buttons
+        const itemTextContainer = document.createElement('div');
+        itemTextContainer.classList.add('item-text'); // Add class for styling
+        itemTextContainer.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+        
+        // Create buttons container
+        const buttonContainer = document.createElement('div');
+        buttonContainer.classList.add('cart-item-buttons'); // Add class for styling
         
         // Add button
         const addButton = document.createElement('button');
@@ -56,13 +63,20 @@ function updateCartDisplay() {
         removeButton.textContent = '-';
         removeButton.onclick = () => removeFromCart(item.name);
 
-        listItem.appendChild(addButton);
-        listItem.appendChild(removeButton);
+        // Append buttons to button container
+        buttonContainer.appendChild(addButton);
+        buttonContainer.appendChild(removeButton);
+
+        // Append item text container and button container to the list item
+        listItem.appendChild(itemTextContainer);
+        listItem.appendChild(buttonContainer);
+        
         cartItemsContainer.appendChild(listItem);
     });
 
     cartTotalDisplay.textContent = `Total: $${total.toFixed(2)}`;
 }
+
 
 // Show the checkout modal
 function showModal() {
