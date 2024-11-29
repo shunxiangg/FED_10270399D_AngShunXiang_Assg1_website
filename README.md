@@ -19,6 +19,7 @@ Welcome to my imaginative retro-inspired website! This project brings to life th
   - [Browser and Device Testing](#Browser-and-Device-Testing)
   - [functional payment page](#functional-payment-page)
   - [Music play upon clicked](#music-play-upon-clicked)
+  - [Filter](#Filter)
 - [Credits References](#credits-References)
 -[Acknoledgements](#acknowledgements)
 
@@ -89,6 +90,9 @@ The website has a cart checkout page but not a fully functional payment page whe
 
 ### Music play upon clicked
 The website has a gallery page where all the songs of the band are placed there and upon clicked song will start playing
+
+### Filter
+The buy buttons on the store page are all align but when user press on the filter the buttons are not align anymore. - to solve this i need some js script to calculate the layout after filtering
 
 ## Credits References
 - The text for the "Vintage Items" section was inspired by various retro catalogs from the '90s.
