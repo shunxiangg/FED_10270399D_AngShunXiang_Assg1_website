@@ -802,15 +802,15 @@ form button:active,
 .member {
     background-color: #e039b74f; /*** background colour for image container*/
     padding: 20px;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     
 }
 
 .member:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px); /* Hover effect to lift up the card */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     background-color: #b298ab;
 }
@@ -827,23 +827,23 @@ form button:active,
 
 .member h3 {
     font-size: 1.8em;
-    color: #d2691e;
+    color: #d2691e; /* A vintage brown color for the member's name */
     margin-bottom: 10px;
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: 'Courier New', Courier, monospace; /* Retro font */
 }
 
 
 /* Flexbox container for price and button */
 .price-button-container {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center; /* Align price and button vertically */
+    justify-content: space-between; /* Optional: adds space between elements */
 }
 
 /* Price styles */
 .product-price {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.8rem; 
+    font-size: 1.8rem; /* Adjust for readability */
     color: #ffffff;
     font-weight: bold;
     padding-left: 7%;

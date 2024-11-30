@@ -1,3 +1,5 @@
+
+// Initialize the cart with data from localStorage or set it to an empty array if no data exists
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Function to add an item to the cart or increase its quantity
@@ -8,6 +10,7 @@ function addToCart(itemName, itemPrice) {
     } else {
         cart.push({ name: itemName, price: itemPrice, quantity: 1 });
     }
+    // Update the cart display after adding the item
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCartDisplay();
 }
@@ -16,6 +19,7 @@ function addToCart(itemName, itemPrice) {
 function removeFromCart(itemName) {
     const item = cart.find(cartItem => cartItem.name === itemName);
     if (item) {
+        // If the item is found, decrement its quantity
         item.quantity--;
         if (item.quantity === 0) {
             cart = cart.filter(cartItem => cartItem.name !== itemName);
@@ -98,7 +102,7 @@ window.onload = () => {
 // Proceed to checkout and show modal
 document.getElementById('proceedCheckout').onclick = () => {
     if (cart.length === 0) {
-        alert("Your cart is empty!");
+        alert("Your cart is empty please buy something!");
         return;
     }
 

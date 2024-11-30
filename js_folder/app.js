@@ -1,12 +1,11 @@
 
 
 
-
-
 // Toggle Menu
 const menuIcon = document.getElementById("menuIcon");
 const navLinks = document.getElementById("navLinks");
 
+// Toggle the 'active' class on the navigation links when the menu icon is clicked
 menuIcon.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
@@ -18,8 +17,9 @@ document.addEventListener('click', (event) => {
 });
 
 
+// contact form
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // this line prevents the thankyou message from disappearing
+    event.preventDefault();
     document.getElementById('contactForm').style.display = 'none'; // hide the form
     document.getElementById('thankYouMessage').style.display = 'block';
 });
@@ -30,14 +30,17 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 ///////////////////////////////////////////////
 
 
+// Store items modal
 function showModal(title, imageSrc, shortDescription, longDescription) {
+    // Set the content of the modal (title, image, descriptions)
     document.getElementById('modalTitle').innerText = title;
     document.getElementById('modalImage').src = imageSrc;
     document.getElementById('modalShortDescription').innerText = shortDescription;
     document.getElementById('modalLongDescription').innerText = longDescription;
 
+    // Show the modal
     const modal = document.getElementById('productModal');
-    modal.style.display = 'block';
+    modal.style.display = 'block';  // change the style to block to show the modal
 }
 
 function closeModal() {
@@ -61,7 +64,8 @@ function filterByPrice() {
         const priceText = item.querySelector('.product-price').textContent;
         const price = parseFloat(priceText.replace('$', ''));
 
-        let showItem = false;
+        let showItem = false;   // Variable to decide whether to show or hide the item
+
 
         switch (priceRange) {
             case 'all':
