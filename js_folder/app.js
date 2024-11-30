@@ -16,7 +16,7 @@ document.addEventListener('click', (event) => {
     }
 });
 
-
+/////////////////////////////////
 // contact form
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
