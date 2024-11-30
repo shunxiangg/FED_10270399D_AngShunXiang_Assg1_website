@@ -35,49 +35,50 @@
             </div>
         </nav>
     </header>
-<section></section>
+
+<h4></h4>
 
     <!-- Filter  -->
     <section id="photos" class="dash">
         <h2 class="page_title">Gallery</h2>
             <div id="gallery">
                 <div style="position: relative; display: inline-block;">
-                    <img class="playImage" src="imgs_folder/img_Daisy Jones & The Six.jpg" style="cursor:pointer;" width="300px">
+                    <img class="playImage" src="imgs_folder/img_Daisy Jones & The Six.jpg" style="cursor:pointer;" width="300px" alt="music box">
                     <audio class="myAudio" src="videoAudio_folder/somg_retrosoul.mp4" style="display:none;"></audio>
                     <div class="overlay">Click Me</div>
                 </div>
                 <div style="position: relative; display: inline-block;">
-                    <img class="playImage" src="imgs_folder/img_Metal Poster Retro Sound 4.jpg" style="cursor:pointer;" width="300px">
+                    <img class="playImage" src="imgs_folder/img_Metal Poster Retro Sound 4.jpg" style="cursor:pointer;" width="300px" alt="music box">
                     <audio class="myAudio" src="videoAudio_folder/song_badds.mp4" style="display:none;"></audio>
                     <div class="overlay">Click Me</div>
                 </div>
                 <div style="position: relative; display: inline-block;">
-                    <img class="playImage" src="imgs_folder/img_Old Songs.jpg" style="cursor:pointer;" width="300px">
+                    <img class="playImage" src="imgs_folder/img_Old Songs.jpg" style="cursor:pointer;" width="300px" alt="music box">
                     <audio class="myAudio" src="videoAudio_folder/song_downtown.mp4" style="display:none;"></audio>
                     <div class="overlay">Click Me</div>
                 </div>
                 <div style="position: relative; display: inline-block;">
-                    <img class="playImage" src="imgs_folder/img_random.jpg" style="cursor:pointer;" width="300px">
+                    <img class="playImage" src="imgs_folder/img_random.jpg" style="cursor:pointer;" width="300px" alt="music box">
                     <audio class="myAudio" src="videoAudio_folder/song_thejassz.mp4" style="display:none;"></audio>
                     <div class="overlay">Click Me</div>
                 </div>
                 <div style="position: relative; display: inline-block;">
-                    <img class="playImage" src="imgs_folder/song_1.jpg" style="cursor:pointer;" width="300px">
+                    <img class="playImage" src="imgs_folder/song_1.jpg" style="cursor:pointer;" width="300px" alt="music box">
                     <audio class="myAudio" src="videoAudio_folder/somg_retrosoul.mp4" style="display:none;"></audio>
                     <div class="overlay">Click Me</div>
                 </div>
                 <div style="position: relative; display: inline-block;">
-                    <img class="playImage" src="imgs_folder/song_2.jpg" style="cursor:pointer;" width="300px">
+                    <img class="playImage" src="imgs_folder/song_2.jpg" style="cursor:pointer;" width="300px" alt="music box">
                     <audio class="myAudio" src="videoAudio_folder/song_badds.mp4" style="display:none;"></audio>
                     <div class="overlay">Click Me</div>
                 </div>
                 <div style="position: relative; display: inline-block;">
-                    <img class="playImage" src="imgs_folder/song_3.jpg" style="cursor:pointer;" width="300px">
+                    <img class="playImage" src="imgs_folder/song_3.jpg" style="cursor:pointer;" width="300px" alt="music box">
                     <audio class="myAudio" src="videoAudio_folder/song_downtown.mp4" style="display:none;"></audio>
                     <div class="overlay">Click Me</div>
                 </div>
                 <div style="position: relative; display: inline-block;">
-                    <img class="playImage" src="imgs_folder/song_4.jpg" style="cursor:pointer;" width="300px">
+                    <img class="playImage" src="imgs_folder/song_4.jpg" style="cursor:pointer;" width="300px" alt="music box">
                     <audio class="myAudio" src="videoAudio_folder/song_thejassz.mp4" style="display:none;"></audio>
                     <div class="overlay">Click Me</div>
                 </div>
@@ -90,9 +91,9 @@
         images.forEach((image, index) => {
             image.addEventListener('click', () => {
                 
-                const audio = audios[index];            // Get the corresponding audio by matching the index of the image
+                const audio = audios[index];            // Get the audio by matching the index of the image
                 if (audio.paused) {
-                    audios.forEach(a => a.pause());     // Pause all other audios before playing the one that you clicked
+                    audios.forEach(a => a.pause());     // Pause all audios before playing the one that you clicked
                     audio.play();
                 } else {
                     audio.pause();
@@ -101,7 +102,7 @@
         });
     </script>
     <button class="button-container" id="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
-<section></section>
+    <h4></h4>
 
     <!-- Footer -->
     <footer>
